@@ -1,16 +1,14 @@
 # Projects
-# uncomment the urls if you wish to display them, and add your own URL
-
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
+# Autonomous Indoor Navigation
+- project: Autonomous Indoor Navigation Using Deep Reinforcement Learning Based on Visual Inputs
+  role: Pre-Undergraduate Researcher (KAIST Pre-URP)
+  duration: Sep 2019
   # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+  description: Completed KAIST's 5th Pre-URP, focusing on advanced scientific research skills under the mentorship of Professor Jeha Ryu at GIST.
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
+# Optimal pMMG Sensor Placement
+- project: Optimal pneumatic mechanomyography Sensor Placement for Knee Extensor Analysis
+  role: Undergraduate Researcher (KAIST URP)
+  duration: Jun 2024 &mdash; Dec 2024
   # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+  description: Investigated the application of pneumatic-based mechanomyography (pMMG) sensors for human motion analysis. <ul class="resume-item-list"><li>Designed and conducted experiments to identify optimal sensor placement on quadriceps muscles using gait phase segmentation and Dynamic Time Warping (DTW) algorithms.</li><li>Analyzed correlation between pMMG data and knee torque patterns to enhance accuracy in biomechanical muscle activation assessment.</li><li>Mentored by Professor Kyungchul Kong at KAIST.</li></ul>

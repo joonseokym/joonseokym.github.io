@@ -1,15 +1,12 @@
 # Associations
-# comment out the urls if you do not wish to display them
+- organization: KAIST Student Ambassador (KAINURI)
+  role: President
+  year: Mar 2022 &mdash; May 2024
+  # url: "https://www.kaist.ac.kr"
+  summary: Led the official student ambassador team serving as a liaison between KAIST and the public. <ul class="resume-item-list"><li>Organized and participated in events to promote KAIST’s initiatives and achievements to external audiences.</li><li>Developed and managed content for social media, increasing follower engagement by 25%.</li><li>Collaborated with university departments to coordinate promotional activities and campus tours.</li></ul>
 
-- organization: PETA
-  role: Volunteer
-  year: 2001 &mdash; 2010
-  url: https://www.peta.org/
-  summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
-
-
-- organization: Yale Amnesty International
-  role: Communications coordinator
-  year: 2002 &mdash; 2004
-  url: http://campuspress.yale.edu/amnesty/
-  summary: During my junion and senior years at Yale, I was actively involved in Yale Amnesty International where I helped facilitate our student organization communications through website maintenance, writing for our campus publication, and graphic design of related materials.
+- organization: KAIST Creative Global Leader Camp
+  role: Camp Coordinator & Head Teaching Assistant
+  year: Mar 2022 &mdash; May 2024
+  # url: "#"
+  summary: Coordinated a camp designed to foster creativity and global leadership among high school students. <ul class="resume-item-list"><li>Developed and facilitated interactive workshops and hands-on projects to enhance scientific thinking.</li><li>Supervised a team of teaching assistants, ensuring smooth execution of activities.</li><li>Managed logistics and communication, resulting in a 95% satisfaction rate among attendees.</li></ul>

@@ -1,10 +1,30 @@
 # Recognitions
-- award: Outstanding Achievement
-  organization: Springfield Young Professionals
-  year: 2010, 2014
-  summary: Awarded the Outstanding Achievement award for contributions made to the community and professional accomplishments.
+- award: Fourth Award in Biomedical Engineering
+  organization: Regeneron International Science and Engineering Fair (ISEF)
+  year: May, 2021
+  summary: 'Awarded for project titled "The Power of Twisted Strings: A Portable Elbow CPM Machine with Twisted String Actuator."'
 
-- award: Most Likely To Succeed
-  organization: Springfield High School
-  year: 2004
-  summary: Voted Most Likely To Succeed by a panel of my high school peers.
+- award: Gold Prize in Physics/Earth Science
+  organization: Samsung Humantech Paper Award
+  year: Feb, 2021
+  summary: Awarded for the project "The Power of Twisted Strings" in the 27th Samsung Human-Tech Thesis competition.
+
+- award: Scientific Excellence Award
+  organization: USAID Science Champion Award
+  year: Feb, 2021
+  summary: Awarded by the U.S. Agency for International Development for innovative contributions to biomedical engineering.
+
+- award: Gold Prize
+  organization: Korea Science and Engineering Fair (KSEF)
+  year: Feb, 2021
+  summary: Recognized for outstanding achievement in biomedical engineering research at the 18th Korea Science and Engineering Fair.
+
+- award: Grand Prize, Ministry of Science and ICT Award
+  organization: Youth Science Club (YSC) Scientific Presentation Contest
+  year: Nov, 2020
+  summary: 'Received the Grand Prize for project "The Power of Twisted Strings," reflecting excellence in innovative biomedical engineering research.'
+
+- award: Honorable Mention
+  organization: Korea Science Foundation Research Excellence Award
+  year: Feb, 2020
+  summary: 'Received for research project "Development of a Landing Device Inspired by Cat Skeletal Structure."'
