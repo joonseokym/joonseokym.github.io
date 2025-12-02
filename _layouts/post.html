@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <style>
+    /* 1. 배경 및 레이아웃 */
+    body {
+      background-color: #fcfcfc; /* 아주 미세한 회색조 */
+    }
+
+    .blog-wrapper {
+      max-width: 720px; /* 읽기 편한 너비 */
+      margin: 0 auto; /* 화면 중앙 배치 */
+      padding: 60px 20px;
+    }
+
+    /* 2. 상단 네비게이션 (가운데 정렬 적용) */
+    .blog-nav {
+      text-align: center; /* 중앙 정렬 */
+      margin-bottom: 50px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.85em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px; /* 자간을 넓혀서 세련된 느낌 */
+    }
+    .blog-nav a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .blog-nav a:hover {
+      color: #222;
+    }
+
+    /* 3. 글 제목 영역 (가운데 정렬) */
+    .post-header {
+      text-align: center; /* 중앙 정렬 */
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee; /* 제목 아래 구분선 추가 */
+    }
+    .post-title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      font-size: 2.8em;
+      color: #111;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+    .post-date {
+      font-family: "Lora", serif;
+      font-style: italic;
+      color: #999;
+      font-size: 1em;
+    }
+
+    /* 4. 본문 디자인 */
+    .post-content {
+      font-family: "Lora", serif;
+      font-size: 18px;
+      line-height: 1.85;
+      color: #333;
+      /* 본문 텍스트는 가독성을 위해 '왼쪽 정렬'을 유지합니다. 
+         만약 본문도 가운데로 하고 싶다면 text-align: center; 를 추가하세요. */
+    }
+
+    /* 요소별 스타일 */
+    .post-content p {
+      margin-bottom: 25px;
+    }
+
+    /* 이미지 가운데 정렬 */
+    .post-content img {
+      display: block;
+      margin: 40px auto; /* 이미지 중앙 배치 */
+      max-width: 100%;
+      border-radius: 8px; /* 이미지 모서리 둥글게 */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .post-content h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.8em;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .post-content h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.4em;
+      margin-top: 40px;
+      color: #444;
+    }
+
+    /* 인용구 스타일 */
+    .post-content blockquote {
+      text-align: center; /* 인용구는 가운데 정렬 */
+      font-style: italic;
+      font-size: 1.2em;
+      color: #666;
+      margin: 40px 0;
+      border: none;
+      padding: 0 20px;
+    }
+
+    /* 5. 하단 버튼 (가운데 정렬) */
+    .post-footer {
+      margin-top: 80px;
+      text-align: center; /* 중앙 정렬 */
+    }
+    .back-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      background-color: transparent;
+      color: #888;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 0.85em;
+      transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      border-color: #333;
+      color: #333;
+    }
+  </style>
+
+  <body>
+    <div class="blog-wrapper">
+      <nav class="blog-nav">
+        <a href="{{ site.baseurl }}/">Joonseo Kym's Blog</a>
+      </nav>
+
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
+      </header>
+
+      <article class="post-content">{{ content }}</article>
+
+      <footer class="post-footer">
+        <a href="{{ site.baseurl }}/" class="back-btn"> Back to Resume </a>
+      </footer>
+    </div>
+  </body>
+</html>

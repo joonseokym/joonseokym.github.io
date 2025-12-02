@@ -1,14 +1,14 @@
 # Projects
 # Autonomous Indoor Navigation
 - project: Autonomous Indoor Navigation Using Deep Reinforcement Learning Based on Visual Inputs
-  role: Pre-Undergraduate Researcher (KAIST Pre-URP)
+  role: Pre-Undergraduate Research Participation Program (KAIST Pre-URP Program)
   duration: Sep 2019
   # url: "#"
   description: Completed KAIST's 5th Pre-URP, focusing on advanced scientific research skills under the mentorship of Professor Jeha Ryu at GIST.
 
 # Optimal pMMG Sensor Placement
 - project: Optimal pneumatic mechanomyography Sensor Placement for Knee Extensor Analysis
-  role: Undergraduate Researcher (KAIST URP)
+  role: Undergraduate Research Participation Program (KAIST URP Program)
   duration: Jun 2024 &mdash; Dec 2024
-  # url: "#"
+  url: "/2024/12/02/pmmg-sensor.html"
   description: Investigated the application of pneumatic-based mechanomyography (pMMG) sensors for human motion analysis. <ul class="resume-item-list"><li>Designed and conducted experiments to identify optimal sensor placement on quadriceps muscles using gait phase segmentation and Dynamic Time Warping (DTW) algorithms.</li><li>Analyzed correlation between pMMG data and knee torque patterns to enhance accuracy in biomechanical muscle activation assessment.</li><li>Mentored by Professor Kyungchul Kong at KAIST.</li></ul>

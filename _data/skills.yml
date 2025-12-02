@@ -1,12 +1,24 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+# Robotics and mechatronic systems
+- skill: Robotics and mechatronic systems
+  description: Experience designing and building robotic and mechatronic systems, from concept and CAD to hardware integration and experimental validation.
 
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
+# Mechanical design and CAD
+- skill: Mechanical design and CAD
+  description: Proficient in SolidWorks for part and assembly modeling, mechanism design, and rapid prototyping with 3D printing for robotic and wearable applications.
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+# Sensing, instrumentation, and signal processing
+- skill: Sensing, instrumentation, and signal processing
+  description: Hands-on experience designing and fabricating pneumatic mechanomyography (pMMG) sensors, building measurement setups, and implementing real-time data acquisition and basic signal processing.
+
+# Control and dynamic systems
+- skill: Control and dynamic systems
+  description: Background in system modeling and control, dynamics, vibration, and circuit theory; applying these concepts to sensor-based systems and motor control experiments.
+
+# Programming for robotics
+- skill: Programming for robotics
+  description: Comfortable with C++ and Python for control algorithms, data processing, and experimentation automation; using code to interface with sensors, actuators, and embedded systems.
+
+# Research and scientific writing
+- skill: Research and scientific writing
+  description: Experience planning and executing research projects, analyzing experimental data, and preparing manuscripts for peer-reviewed venues such as IEEE Sensors Journal.

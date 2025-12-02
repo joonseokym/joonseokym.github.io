@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Blog Posts"
+---
+
+<ul class="resume-item-list">
+  {% for post in site.posts %}
+  <li style="margin-bottom: 15px">
+    <span style="color: gray; font-size: 0.9em; margin-right: 10px">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </span>
+    <a
+      href="{{ post.url | relative_url }}"
+      style="
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+        font-size: 1.1em;
+      "
+    >
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

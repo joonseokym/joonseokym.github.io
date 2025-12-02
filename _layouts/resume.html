@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  <!-- <style>
+    .wrapper {
+      padding-top: 100px !important; /* 기본값보다 여백을 늘림 (숫자를 조절하세요) */
+    }
 
+    /* (선택사항) 모바일에서는 여백이 너무 크지 않게 조정 */
+    @media screen and (max-width: 750px) {
+      .wrapper {
+        padding-top: 50px !important;
+      }
+    }
+  </style> -->
   <body
     class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}"
   >
@@ -137,9 +148,20 @@
             itemtype="http://schema.org/Person"
           />
           <h3 class="resume-item-title" itemprop="name">
-            {% if project.url %}<a href="{{ project.url }}" itemprop="url"
-              >{{ project.project }}</a
-            >{% else %}{{ project.project }}{% endif %}
+            {% if project.url %}
+            <a
+              href="{{ project.url }}"
+              itemprop="url"
+              style="
+                text-decoration: none !important;
+                border: none !important;
+                box-shadow: none !important;
+                color: inherit !important;
+              "
+            >
+              {{ project.project }}
+            </a>
+            {% else %} {{ project.project }} {% endif %}
           </h3>
           <h4 class="resume-item-details" itemprop="description">
             {{ project.role }} &bull; {{ project.duration }}
@@ -274,16 +296,6 @@
       </section>
       <!-- end Print Social Links -->
       {% endif %}
-
-      <footer class="page-footer">
-        <p class="footer-line">
-          Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me
-          on <a href="https://github.com/jglovier/resume-template">GitHub</a>.
-        </p>
-        <p class="footer-line">
-          If this is your live resume, you can modify or remove this part. ;-)
-        </p>
-      </footer>
     </div>
   </body>
 </html>
