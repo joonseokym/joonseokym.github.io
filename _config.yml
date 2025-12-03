@@ -13,7 +13,7 @@ sass:
 # Resume settings
 resume_avatar: "true"
 resume_name: "Joonseo Kym"
-resume_title: "Undergraduate Student @ Dep. of Mechanical Engineering, KAIST"
+resume_title: "Undergraduate Student<br>@ Dep. of Mechanical Engineering, KAIST"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email: "joonseo@kaist.ac.kr"
@@ -25,7 +25,12 @@ resume_contact_address: "Daejeon, South Korea"
 resume_header_contact_info: "Daejeon, South Korea • (+82)10-8025-4547 • joonseo@kaist.ac.kr"
 display_header_contact_info: "false"
 
-resume_header_intro: "<p>I am an undergraduate student at KAIST (Department of Mechanical Engineering), primarily interested in robotics, biomedical sensors, and mechanical design. My research focuses on developing pneumatic mechanomyography (pMMG) sensors and exploring applications in wearable technology and human-machine interfaces.<br> I have hands-on experience in sensor design and fabrication, real-time data acquisition systems, and mechanical prototyping using 3D printing and CAD tools. I am proficient in Python for data processing and control systems, and have completed coursework in systems modeling and control theory.</p>"
+resume_header_intro: "<p>
+  <strong>Undergraduate Researcher at KAIST, Department of Mechanical Engineering.</strong><br>
+  I am dedicated to advancing Human-Machine Interfaces (HMI) through novel sensing technologies and robotics. My current research focuses on developing optimal pneumatic mechanomyography (pMMG) sensors for precise muscle activation analysis, aiming to innovate wearable technology and rehabilitation systems.
+  <br><br>
+  I possess a comprehensive engineering skillset bridging hardware and software: from mechanical design (CAD) and sensor fabrication to real-time data acquisition and signal processing using Python. With a solid foundation in system modeling and control theory, I am eager to contribute to cutting-edge research that integrates mechanical ingenuity with intelligent systems.
+</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,

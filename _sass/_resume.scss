@@ -63,7 +63,7 @@
       margin: 0 0 .5rem;
 
       @include media_larger_than_mobile {
-        float: left;
+        // float: left; // Removed to stack vertically
         margin: 0;
       }
     }
@@ -81,13 +81,14 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  // border-top: 2px solid #c7c7c7; // Removed border top
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
-    float: right;
+    // float: right; // Removed to stack vertically
     border-top: none;
     padding-top: 0;
+    text-align: right;
   }
 
   .icon-link-item {
@@ -167,6 +168,16 @@
       &:hover {
         border-bottom: none;
         color: #9c9c9c;
+      }
+
+      &.clean-link {
+        border-bottom: none;
+        color: #333; // Ensure it starts with the default color
+        transition: color 0.3s ease; // Add smooth transition
+
+        &:hover {
+          color: #9c9c9c; // Change color on hover
+        }
       }
     }
   }

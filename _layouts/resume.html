@@ -72,31 +72,7 @@
         {% else %} {% endif %}
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        {% for job in site.data.experience %}
-        <div
-          class="resume-item"
-          itemscope
-          itemprop="worksFor"
-          itemtype="http://schema.org/Organization"
-        >
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">
-            {{ job.position }} &bull; {{ job.duration }}
-          </h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div>
-        <!-- end of resume-item -->
-        {% endfor %}
-      </section>
-      <!-- end Experience -->
-      {% endif %} {% if site.resume_section_education %}
+      {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
@@ -152,12 +128,7 @@
             <a
               href="{{ project.url }}"
               itemprop="url"
-              style="
-                text-decoration: none !important;
-                border: none !important;
-                box-shadow: none !important;
-                color: inherit !important;
-              "
+              class="clean-link"
             >
               {{ project.project }}
             </a>
@@ -195,7 +166,15 @@
 
         {% for patent in site.data.patents %}
         <div class="resume-item">
-          <h3 class="resume-item-title">{{ patent.award }}</h3>
+          <h3 class="resume-item-title">
+            {% if patent.url %}
+              <a href="{{ patent.url }}" target="_blank" class="clean-link">
+                {{ patent.award }}
+              </a>
+            {% else %}
+              {{ patent.award }}
+            {% endif %}
+          </h3>
           <h4 class="resume-item-details">
             {{ patent.organization }} &bull; {{ patent.year }}
           </h4>
@@ -251,7 +230,35 @@
         {% endfor %}
       </section>
       <!-- end Associations -->
-      {% endif %} {% if site.resume_section_interests %}
+      {% endif %}
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div
+          class="resume-item"
+          itemscope
+          itemprop="worksFor"
+          itemtype="http://schema.org/Organization"
+        >
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">
+            {{ job.position }} &bull; {{ job.duration }}
+          </h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div>
+        <!-- end of resume-item -->
+        {% endfor %}
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_interests %}
       <!-- begin Interests -->
       <section class="content-section">
         <header class="section-header">
