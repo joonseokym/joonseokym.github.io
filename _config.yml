@@ -13,7 +13,7 @@ sass:
 # Resume settings
 resume_avatar: "true"
 resume_name: "Joonseo Kym"
-resume_title: "Undergraduate Student<br>@ Dep. of Mechanical Engineering & Electriclal Engineering, KAIST"
+resume_title: "Undergraduate Student<br>@ Dep. of Mechanical Engineering<br>& Electriclal Engineering, KAIST"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email: "joonseo@kaist.ac.kr"
