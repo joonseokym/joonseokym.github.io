@@ -26,7 +26,6 @@ resume_header_contact_info: "Daejeon, South Korea • (+82)10-8025-4547 • joon
 display_header_contact_info: "false"
 
 resume_header_intro: "<p>
-  <strong>Undergraduate Researcher at KAIST, Dual Majoring in Mechanical Engineering and Electrical & Electronic Engineering.</strong><br>
   I am dedicated to advancing highly dynamic robotics and intelligent control systems. While my recent research involves developing optimal pneumatic mechanomyography (pMMG) sensors and real-time signal processing pipelines, my core objective is to bridge hardware design and learning-based control to build robust robotic systems.
   <br><br>
   I possess a solid engineering skillset that includes mechanical design (CAD), real-time data acquisition, and signal processing. Leveraging my dual background in mechanical and electrical engineering, I have a strong foundation in system modeling and control theory. I am highly motivated to deepen my expertise in custom electronics and PCB design to develop fully integrated robotic hardware. With a growing interest in reinforcement learning (RL), I am eager to contribute to cutting-edge research in legged locomotion and autonomous robotics.
@@ -38,7 +37,7 @@ resume_header_intro: "<p>
 # to leave blank
 resume_looking_for_work: "yes"
 # CV Download Link
-resume_cv_url: "/assets/pdf/Joonseo_Kym_CV.pdf"
+resume_cv_url: "/_assets/pdf/Joonseo_Kym_CV.pdf"
 
 # Decide which sections to use
 # comment out to hide
