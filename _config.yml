@@ -37,6 +37,8 @@ resume_header_intro: "<p>
 # or remove the resume_looking_for_work option entirely
 # to leave blank
 resume_looking_for_work: "yes"
+# CV Download Link
+resume_cv_url: "/assets/pdf/Joonseo_Kym_CV.pdf"
 
 # Decide which sections to use
 # comment out to hide
