@@ -1,5 +1,7 @@
-# Social Service Personnel
-- company: Gwacheon Family Center
-  position: Social Service Personnel (Mandatory Military Alternative Service)
-  duration: Feb, 2025 &mdash; Nov, 2026
-  summary: Completed mandatory military alternative service through community engagement, demonstrating strong commitment and responsibility. <ul class="resume-item-list"><li>Managed official document processing, ensuring accuracy and timely handling of administrative tasks.</li><li>Delivered educational support and mentorship to children from multicultural families, fostering inclusive learning environments.</li><li>Assisted in daily operational activities, contributing to efficient center management and program execution.</li></ul>
+# Experience
+
+# KAIST Exoskeleton Lab Research
+- company: Exoskeleton Lab (KAIST)
+  position: Undergraduate Research Assistant (Individual Research & URP)
+  duration: Dec 2023 &mdash; Jan 2025
+  summary: <ul class="resume-item-list"><li>Conducted comprehensive research on proportional Mechanomyography (pMMG), encompassing theoretical principles, analog pneumatic sensor selection, and the end-to-end hardware manufacturing process under Professor Kyoungchul Kong.</li><li>Fabricated custom pMMG sensors and developed a robust data acquisition (DAQ) system utilizing NI myRIO and FPGA architecture.</li><li>Validated signal integrity and performance metrics through low-level LabVIEW programming, ensuring precise sensor calibration for robotic exoskeleton applications.</li><li>Prepared a full manuscript as the 2nd author, detailing the design, fabrication, and validation methodologies of the customized pMMG sensor system.</li></ul>
