@@ -73,3 +73,6 @@ resume_theme: default
 
 plugins:
   - jekyll-sitemap
+# Jekyll이 무시하는 언더바(_) 폴더를 강제로 포함시키는 설정
+include:
+  - "_assets"
