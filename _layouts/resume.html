@@ -50,20 +50,26 @@
         <h4 class="resume-item-details group">
           {{ education.degree }} &bull; {{ education.year }}
         </h4>
+
+        {% if education.gpa and education.gpa != "" %}
         <h5 class="resume-item-details award-title">
-          GPA: 3.78 / 4.30
+          GPA: {{ education.gpa }}
         </h5>
+        {% endif %}
+
+        {% if education.summary and education.summary != "" %}
+        <p class="resume-item-copy">{{ education.summary }}</p>
+        {% endif %}
+
         <ul class="resume-item-list">
           {% for award in education.awards %}
           <li>{{ award.award }}</li>
           {% endfor %}
         </ul>
-        <p class="resume-item-copy">{{ education.summary }}</p>
       </div>
       {% endfor %}
     </section>
     {% endif %}
-
     {% if site.resume_section_experience %}
     <section class="content-section">
       <header class="section-header">
