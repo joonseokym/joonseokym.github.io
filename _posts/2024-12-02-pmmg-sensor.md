@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Optimal pneumatic mechanomyography Sensor Placement for Knee Extensor Analysis"
-date: 2024-12-02
+# date: 2024-12-02
 ---
 
 ### 1. Overview / Abstract
