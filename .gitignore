@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.mp4
+.pdf
+.mov
+.jpeg
+.png
+.jpg

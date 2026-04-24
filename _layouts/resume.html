@@ -105,10 +105,9 @@
       {% for patent in site.data.patents %}
       <div class="resume-item">
         <h3 class="resume-item-title">
-          {% if patent.url %}
-          <a href="{{ patent.url }}" target="_blank" class="clean-link">{{ patent.award }} <span class="link-indicator">&#8599;</span></a>
-          {% else %}
           {{ patent.award }}
+          {% if patent.url %}
+          <a href="{{ patent.url }}" target="_blank" class="view-details-badge">View Details</a>
           {% endif %}
         </h3>
         <h4 class="resume-item-details">
@@ -150,9 +149,10 @@
       <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
         <h3 class="resume-item-title" itemprop="name">
+          {{ project.project }}
           {% if project.url %}
-          <a href="{{ project.url }}" itemprop="url" class="clean-link">{{ project.project }} <span class="link-indicator">&#8599;</span></a>
-          {% else %} {{ project.project }} {% endif %}
+          <a href="{{ project.url }}" itemprop="url" class="view-details-badge">View Project Details</a>
+          {% endif %}
         </h3>
         <h4 class="resume-item-details" itemprop="description">
           {{ project.role }} &bull; {{ project.duration }}
@@ -165,6 +165,10 @@
         <div class="resume-item-copy">{{ project.description }}</div>
       </div>
       {% endfor %}
+      
+      <div style="font-size: 0.9em; color: #666; margin-top: 1rem; font-style: italic; text-align: right;">
+        Note: Publications and projects prior to 2021 were authored under the name 'Joonseo Kim'.
+      </div>
     </section>
     {% endif %}
 
@@ -209,8 +213,10 @@
       {% for association in site.data.associations %}
       <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
         <h3 class="resume-item-title" itemprop="name">
-          {% if association.url %}<a href="{{ association.url }}" class="clean-link">{{ association.organization }} <span class="link-indicator">&#8599;</span></a>{% else %}{{
-          association.organization }}{% endif %}
+          {{ association.organization }}
+          {% if association.url %}
+          <a href="{{ association.url }}" class="view-details-badge">Link</a>
+          {% endif %}
         </h3>
         <h4 class="resume-item-details" itemprop="description">
           {{ association.role }} &bull; {{ association.year }}

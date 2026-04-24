@@ -12,8 +12,13 @@ Conventional sEMG sensors are highly susceptible to sweat-induced signal distort
 
 ### 3. Hardware System Design
 
-![Final assembled sensor and 3D housing](/assets/photos/sensor_and_housing.jpeg)
+<img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" alt="Final assembled sensor and 3D housing" style="width: 50%; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onclick="document.getElementById('modal-sensor1').style.display='flex'" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
 *Fig 1. Final assembled pMMG sensor and 3D-printed housing.*
+
+<div id="modal-sensor1" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
+  <span style="position: absolute; top: 20px; right: 30px; color: rgba(255,255,255,0.8); font-size: 40px; font-weight: bold;">&times;</span>
+  <img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" style="max-width: 90%; max-height: 90vh; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+</div>
 
 ![Sensor attachment on the thigh](/path/to/your/image2.jpg)
 *Fig 2. Sensor attachment on the thigh for data acquisition.*

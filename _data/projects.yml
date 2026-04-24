@@ -16,9 +16,17 @@
 - project: Development of a Circular Twisted String Continuous Passive Motion Actuator
   role: IASA SA (Steam Activity) Research Project • First Author / Project Lead
   duration: Mar 2020 &mdash; Apr 2021
+  url: "/2021/04/01/twisted-string-cpm.html"
   description: <ul class="resume-item-list"><li>Developed a wearable, circular twisted string continuous passive motion (CPM) actuator to significantly reduce the volume and weight of traditional elbow rehabilitation devices.</li><li>Engineered a 2-stage pulley system within the circular mechanism, which quadrupled the range of motion and speed to achieve a 10.6 cm operational range sufficient for rehabilitation.</li><li>Established and experimentally validated a mathematical model to predict string displacement and output force based on the number of twists.</li><li>Demonstrated through load testing with linear potentiometers that the actuator generates over 60N of force, surpassing the 32.6N benchmark required to move an adult male forearm at a constant velocity.</li><li>Achieved up to a 15-fold increase in output force relative to motor torque, confirming the system's mechanical stability and efficiency for high-load rehabilitation tasks.</li></ul>
 
-# 4. Optimal pMMG Sensor Placement
+# 4. Automatic Shuttlecock Classification & Arrangement Sweeper
+- project: Automatic Shuttlecock Classification & Arrangement Sweeper
+  role: ME340 Engineering Design Project • Student Engineer
+  duration: Sep 2023 &mdash; Dec 2023
+  url: "/2023/12/01/shuttlecock-sweeper.html"
+  description: <ul class="resume-item-list"><li>Designed and prototyped a mechanical sweeper incorporating a wheel-driven conveyor belt and a 3-pulley mechanism to automatically collect and lift badminton shuttlecocks from the ground.</li><li>Engineered a smart classification module using an Arduino and 16 IR light sensors to evaluate feather integrity by analyzing light transmission and standard deviation, automatically separating damaged units.</li><li>Fabricated the hardware utilizing SolidWorks, aluminum profiles, and 3D-printed components, while optimizing gear ratios (12/225) for efficient conveying velocity and integrating brush-type propellers to prevent payload damage.</li><li>Validated the system's efficacy through focus groups, A/B testing, and competitive analysis against commercial products, demonstrating superior performance in cost-effectiveness and user convenience.</li></ul>
+
+# 5. Optimal pMMG Sensor Placement
 - project: Optimal pMMG Sensor Placement for Knee Extensor Analysis
   role: KAIST URP & Follow-up Research • Project Lead & First Author
   duration: Jun 2024 &mdash; Present
