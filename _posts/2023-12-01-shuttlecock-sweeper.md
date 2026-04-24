@@ -32,7 +32,7 @@ A mechanical sweeper designed to automatically collect, evaluate, and arrange ba
 
 <div style="display: flex; gap: 20px; margin-bottom: 20px;">
   <video controls style="flex: 1; width: 50%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <source src="{{ '/_assets/videos/shuttlecock-sweeper/test1.MP4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/_assets/videos/shuttlecock-sweeper/test1.mp4' | relative_url }}" type="video/mp4">
     브라우저가 동영상을 지원하지 않습니다.
   </video>
 
