@@ -12,28 +12,61 @@ Conventional sEMG sensors are highly susceptible to sweat-induced signal distort
 
 ### 3. Hardware System Design
 
-<img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" alt="Final assembled sensor and 3D housing" style="width: 50%; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onclick="document.getElementById('modal-sensor1').style.display='flex'" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-*Fig 1. Final assembled pMMG sensor and 3D-printed housing.*
-
-<div id="modal-sensor1" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
-  <span style="position: absolute; top: 20px; right: 30px; color: rgba(255,255,255,0.8); font-size: 40px; font-weight: bold;">&times;</span>
-  <img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" style="max-width: 90%; max-height: 90vh; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+<div style="text-align: center; margin-bottom: 30px;">
+  <img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" alt="Final assembled sensor and 3D housing" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}')">
+  <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px;">*Fig 1. Final assembled pMMG sensor and 3D-printed housing.*</p>
 </div>
 
-![Sensor attachment on the thigh](/path/to/your/image2.jpg)
-*Fig 2. Sensor attachment on the thigh for data acquisition.*
+<div style="text-align: center; margin-bottom: 30px;">
+  <img src="{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}')">
+  <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px;">*Fig 2. Sensor attachment on the thigh for data acquisition.*</p>
+</div>
 
 To accommodate diverse body types and control external variables like band tension, I designed a non-elastic Velcro-based sensor housing. The hardware incorporates a PVC film-based air pouch, an MS5607 pneumatic pressure sensor, and an STM32 (NUCLEO-G474RE) microcontroller. The firmware was developed utilizing **STM32CubeIDE** to ensure reliable and continuous data acquisition at a 200Hz sampling rate.
 
 ### 4. Signal Processing & Validation
 
-![Squat and walking experiments](/path/to/your/image3.jpg)
-*Fig 3. Experimental setup for simultaneous measurement of pMMG pressure and knee joint torque during squat and walking tasks.*
+<div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
+  <img src="{{ '/_assets/photos/pmmg-sensor/squat_exp.png' | relative_url }}" alt="Squat Experiment" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/squat_exp.png' | relative_url }}')">
+  <img src="{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}" alt="Gait Experiment" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}')">
+</div>
+<p style="text-align: center; font-size: 0.9em; color: #666; font-style: italic; margin-bottom: 30px;">
+  *Fig 3. Experimental setup for simultaneous measurement of pMMG pressure and knee joint torque during squat and walking tasks.*
+</p>
 
-![Data monitoring interface](/path/to/your/image4.jpg)
-*Fig 4. Real-time data acquisition and signal monitoring interface utilizing Python and STM32CubeMonitor.*
+<div style="display: flex; gap: 20px; margin-bottom: 30px; align-items: flex-start;">
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}" alt="Data Monitoring Interface" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}')">
+    <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 4. Data Monitoring Interface*</span>
+      <strong>Real-time Data Monitoring Interface (Representative sEMG GUI)</strong><br>
+      While the pMMG-specific monitoring captures were not preserved, this interface illustrates the real-time data acquisition system used during the experiments. The GUI features controls for starting and stopping acquisition, along with a multi-channel waveform display for immediate signal verification.
+    </p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}" alt="Hardware Configuration" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}')">
+    <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 5. Hardware Configuration*</span>
+      <strong>Hardware Interface & Pinout Configuration in STM32CubeIDE</strong><br>
+      To handle multi-channel sensor data with high precision, the system was built around the <strong>STM32G474RETx</strong> MCU. This configuration view shows the pin assignment for various peripherals, including SPI and ADC channels, which were essential for processing the raw pMMG and sEMG signals.
+    </p>
+  </div>
+</div>
 
 To validate the sensor's reliability, I designed comprehensive experimental protocols involving squat and treadmill walking tasks. Real-time sensor data was continuously monitored and logged using **STM32CubeMonitor** and custom **Python** scripts. I built a signal processing pipeline utilizing Least Squares Fitting to remove passive muscle stretch offsets, successfully extracting only the active muscle force generation signals. Subsequent Z-normalization and custom linearity evaluation equations were applied to quantitatively analyze the pMMG signal's response to increasing load. Notably, the validation included simultaneous measurements of pMMG pressure and knee joint torque to rigorously verify the correlation between the two.
 
 ### 5. Outcomes & Current Status
 The analysis proved that the Vastus Medialis exhibits the most linear and consistent response to load changes, allowing us to derive optimal placement guidelines for each target muscle (Rectus Femoris 50%, Vastus Lateralis 60%, Vastus Medialis 20%). Furthermore, walking experiments demonstrated a remarkable 1.97% error rate between the pMMG signal inflection points and the actual joint torque. Based on these strongly validated results, I am currently finalizing a first-author manuscript detailing this torque prediction model, intended for submission to **Biomedical Engineering Letters**.
+
+<!-- Unified Image Modal -->
+<div id="unified-image-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
+  <span style="position: absolute; top: 20px; right: 30px; color: rgba(255,255,255,0.8); font-size: 40px; font-weight: bold;">&times;</span>
+  <img id="modal-img-src" src="" style="max-width: 90%; max-height: 90vh; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+</div>
+
+<script>
+  function openModal(imageSrc) {
+    document.getElementById('modal-img-src').src = imageSrc;
+    document.getElementById('unified-image-modal').style.display = 'flex';
+  }
+</script>
