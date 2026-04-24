@@ -33,7 +33,7 @@
 
       <div class="header-buttons no-print" style="display: flex; gap: 10px; margin-top: 20px;">
         {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('contact-modal').style.display='block'" class="contact-button">Contact me</a>
         {% endif %}
 
         {% if site.resume_cv_url %}
@@ -258,6 +258,60 @@
       <div class="resume-item">{% include print-social-links.html %}</div>
     </section>
     {% endif %}
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal no-print">
+      <div class="modal-content">
+        <span class="close-modal" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
+        <h2>Contact Me</h2>
+        <div class="contact-options">
+          <div class="contact-option">
+            <p><strong>Primary:</strong> contact@joonseokym.com</p>
+            <div class="contact-actions">
+              <a href="mailto:contact@joonseokym.com" class="action-btn">Send Email</a>
+              <button onclick="copyToClipboard('contact@joonseokym.com')" class="action-btn">Copy</button>
+            </div>
+          </div>
+          <div class="contact-option">
+            <p><strong>Academic:</strong> joonseo@kaist.ac.kr</p>
+            <div class="contact-actions">
+              <a href="mailto:joonseo@kaist.ac.kr" class="action-btn">Send Email</a>
+              <button onclick="copyToClipboard('joonseo@kaist.ac.kr')" class="action-btn">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+          alert('Copied to clipboard: ' + text);
+        }, function(err) {
+          console.error('Could not copy text: ', err);
+          // Fallback
+          var textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            document.execCommand('copy');
+            alert('Copied to clipboard: ' + text);
+          } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+          }
+          document.body.removeChild(textArea);
+        });
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function(event) {
+        var modal = document.getElementById('contact-modal');
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
   </div>
 </body>
 
