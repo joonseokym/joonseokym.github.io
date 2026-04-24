@@ -106,7 +106,7 @@
       <div class="resume-item">
         <h3 class="resume-item-title">
           {% if patent.url %}
-          <a href="{{ patent.url }}" target="_blank" class="clean-link">{{ patent.award }}</a>
+          <a href="{{ patent.url }}" target="_blank" class="clean-link">{{ patent.award }} <span class="link-indicator">&#8599;</span></a>
           {% else %}
           {{ patent.award }}
           {% endif %}
@@ -151,13 +151,18 @@
         <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
         <h3 class="resume-item-title" itemprop="name">
           {% if project.url %}
-          <a href="{{ project.url }}" itemprop="url" class="clean-link">{{ project.project }}</a>
+          <a href="{{ project.url }}" itemprop="url" class="clean-link">{{ project.project }} <span class="link-indicator">&#8599;</span></a>
           {% else %} {{ project.project }} {% endif %}
         </h3>
         <h4 class="resume-item-details" itemprop="description">
           {{ project.role }} &bull; {{ project.duration }}
         </h4>
-        <p class="resume-item-copy">{{ project.description }}</p>
+        {% if project.image %}
+        <div class="resume-item-image">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.project }} image">
+        </div>
+        {% endif %}
+        <div class="resume-item-copy">{{ project.description }}</div>
       </div>
       {% endfor %}
     </section>
@@ -204,7 +209,7 @@
       {% for association in site.data.associations %}
       <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
         <h3 class="resume-item-title" itemprop="name">
-          {% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{
+          {% if association.url %}<a href="{{ association.url }}" class="clean-link">{{ association.organization }} <span class="link-indicator">&#8599;</span></a>{% else %}{{
           association.organization }}{% endif %}
         </h3>
         <h4 class="resume-item-details" itemprop="description">
