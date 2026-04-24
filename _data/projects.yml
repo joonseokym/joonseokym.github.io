@@ -4,6 +4,7 @@
 - project: Development of a Drone Landing Gear Mimicking Feline Skeletal Structure
   role: IASA SA (Steam Activity) Research Project • Student Researcher
   duration: Mar 2019 &mdash; Dec 2019
+  url: "/2019/04/01/landing-gear.html"
   description: <ul class="resume-item-list"><li>Designed and 3D-printed a biomimetic drone landing gear inspired by a cat's skeletal structure to ensure safe landings and minimize payload damage.</li><li>Engineered a shock-absorbing joint mechanism utilizing the repulsive force of neodymium magnets and PVC foam, completing 7 iterative design revisions to optimize joint angles up to 152 degrees.</li><li>Conducted drop experiments using PASCO ultrasonic sensors and Capstone software to analyze kinematics (position, velocity, acceleration), identifying that a radial leg arrangement yields superior buffer performance.</li><li>Validated the prototype's shock-absorbing capabilities, successfully achieving stable landings for a 1.5kg payload from a 1m height and a 3kg payload from a 50cm height.</li></ul>
 
 # 2. DDQN Optimization

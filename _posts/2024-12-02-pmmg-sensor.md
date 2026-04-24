@@ -38,17 +38,15 @@ To accommodate diverse body types and control external variables like band tensi
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}" alt="Data Monitoring Interface" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 4. Data Monitoring Interface*</span>
-      <strong>Real-time Data Monitoring Interface (Representative sEMG GUI)</strong><br>
-      While the pMMG-specific monitoring captures were not preserved, this interface illustrates the real-time data acquisition system used during the experiments. The GUI features controls for starting and stopping acquisition, along with a multi-channel waveform display for immediate signal verification.
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 4: Real-time Data Monitoring Interface (Representative sEMG GUI)*</span>
+      While pMMG-specific captures were not preserved, this representative interface illustrates the real-time acquisition system used, featuring core controls and multi-channel waveform displays for immediate signal verification.
     </p>
   </div>
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}" alt="Hardware Configuration" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 5. Hardware Configuration*</span>
-      <strong>Hardware Interface & Pinout Configuration in STM32CubeIDE</strong><br>
-      To handle multi-channel sensor data with high precision, the system was built around the <strong>STM32G474RETx</strong> MCU. This configuration view shows the pin assignment for various peripherals, including SPI and ADC channels, which were essential for processing the raw pMMG and sEMG signals.
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig 5: Hardware Configuration*</span>
+      Pinout configuration of the STM32G474RETx MCU in STM32CubeIDE, detailing SPI and ADC assignments essential for processing raw pMMG and sEMG signals.
     </p>
   </div>
 </div>

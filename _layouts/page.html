@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <style>
+    body {
+      background-color: #fcfcfc;
+    }
+
+    .page-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .page-nav {
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.85em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .page-nav a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .page-nav a:hover {
+      color: #222;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .page-title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      font-size: 2.5em;
+      color: #111;
+      margin-bottom: 15px;
+    }
+
+    .page-content {
+      font-family: "Lora", serif;
+      font-size: 18px;
+      line-height: 1.85;
+      color: #333;
+    }
+
+    .page-footer {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .back-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      background-color: transparent;
+      color: #888;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 0.85em;
+      transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      border-color: #333;
+      color: #333;
+    }
+  </style>
+
+  <body>
+    <div class="page-wrapper">
+      <nav class="page-nav">
+        <a href="{{ site.baseurl }}/">Joonseo Kym's Resume</a>
+      </nav>
+
+      <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </header>
+
+      <article class="page-content">{{ content }}</article>
+
+      <footer class="page-footer">
+        <a href="{{ site.baseurl }}/" class="back-btn"> Back to Resume </a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -9,6 +9,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+  quiet_deps: true
 
 # Resume settings
 resume_avatar: "true"
