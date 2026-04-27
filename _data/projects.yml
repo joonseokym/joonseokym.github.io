@@ -1,35 +1,35 @@
 # Projects
 
-# 1. Drone Landing Gear
-- project: Development of a Drone Landing Gear Mimicking Feline Skeletal Structure
-  role: IASA SA (Steam Activity) Research Project • Student Researcher
-  duration: Mar 2019 &mdash; Dec 2019
-  url: "/2019/04/01/landing-gear.html"
-  description: <ul class="resume-item-list"><li>Designed and 3D-printed a biomimetic drone landing gear inspired by a cat's skeletal structure to ensure safe landings and minimize payload damage.</li><li>Engineered a shock-absorbing joint mechanism utilizing the repulsive force of neodymium magnets and PVC foam, completing 7 iterative design revisions to optimize joint angles up to 152 degrees.</li><li>Conducted drop experiments using PASCO ultrasonic sensors and Capstone software to analyze kinematics (position, velocity, acceleration), identifying that a radial leg arrangement yields superior buffer performance.</li><li>Validated the prototype's shock-absorbing capabilities, successfully achieving stable landings for a 1.5kg payload from a 1m height and a 3kg payload from a 50cm height.</li></ul>
+# 1. Optimal pMMG Sensor Placement
+- project: Optimal pMMG Sensor Placement for Knee Extensor Analysis
+  role: KAIST URP & Follow-up Research • Project Lead & First Author
+  duration: Jun 2024 &mdash; Present
+  url: "/2024/12/02/pmmg-sensor.html"
+  description: <ul class="resume-item-list"><li>Independently conceptualized the research topic and spearheaded the entire project lifecycle—from initial hypothesis formulation to hardware design and experimental validation.</li><li>Developed a synchronized data acquisition system using an STM32 microcontroller and MS5607 pressure sensors to capture muscle volume changes via pneumatic mechanomyography (pMMG), overcoming traditional sEMG/IMU limitations.</li><li>Processed kinematic data using gait phase segmentation and Dynamic Time Warping (DTW) to map pMMG signals, establishing optimal sensor placement guidelines (e.g., 20% muscle length for vastus lateralis).</li><li>Designed and executed advanced follow-up experiments at Angel Robotics using Motion Capture systems and Force Plates to simultaneously measure pMMG signals and actual knee joint torque via inverse dynamics.</li><li>Currently drafting a first-author manuscript for journal submission detailing the quantitative assessment of knee extensor activation and joint torque estimation using pMMG sensors.</li></ul>
 
-# 2. DDQN Optimization
-- project: Optimization of Deep Reinforcement Learning for Control Problems
-  role: KAIST Pre-URP Program • Student Researcher
-  duration: Aug 2019 &mdash; Sep 2019
-  description: <ul class="resume-item-list"><li>Implemented and trained a Double Deep Q-Network (DDQN) agent to solve the CartPole control problem using Keras and OpenAI Gym environments.</li><li>Conducted extensive hyperparameter tuning across 11 variables (e.g., learning rate, epsilon decay, network depth, activation functions) to stabilize the learning process and maximize reward acquisition.</li><li>Evaluated the model's performance over 1,000 episodes, establishing that the optimized DDQN model achieved the success threshold (average score > 195) in just 151.8 episodes on average.</li><li>Significantly improved learning efficiency, outperforming the default model's baseline of 549.6 episodes by approximately 72%.</li><li>Completed intensive 2-week on-site research mentored by Professor Jeha Ryu at the Gwangju Institute of Science and Technology (GIST).</li></ul>
-
-# 3. Twisted String CPM Actuator
+# 2. Twisted String CPM Actuator
 - project: Development of a Circular Twisted String Continuous Passive Motion Actuator
   role: IASA SA (Steam Activity) Research Project • First Author / Project Lead
   duration: Mar 2020 &mdash; Apr 2021
   url: "/2021/04/01/twisted-string-cpm.html"
   description: <ul class="resume-item-list"><li>Developed a wearable, circular twisted string continuous passive motion (CPM) actuator to significantly reduce the volume and weight of traditional elbow rehabilitation devices.</li><li>Engineered a 2-stage pulley system within the circular mechanism, which quadrupled the range of motion and speed to achieve a 10.6 cm operational range sufficient for rehabilitation.</li><li>Established and experimentally validated a mathematical model to predict string displacement and output force based on the number of twists.</li><li>Demonstrated through load testing with linear potentiometers that the actuator generates over 60N of force, surpassing the 32.6N benchmark required to move an adult male forearm at a constant velocity.</li><li>Achieved up to a 15-fold increase in output force relative to motor torque, confirming the system's mechanical stability and efficiency for high-load rehabilitation tasks.</li></ul>
 
-# 4. Automatic Shuttlecock Classification & Arrangement Sweeper
+# 3. Automatic Shuttlecock Classification & Arrangement Sweeper
 - project: Automatic Shuttlecock Classification & Arrangement Sweeper
   role: ME340 Engineering Design Project • Student Engineer
   duration: Sep 2023 &mdash; Dec 2023
   url: "/2023/12/01/shuttlecock-sweeper.html"
   description: <ul class="resume-item-list"><li>Designed and prototyped a mechanical sweeper incorporating a wheel-driven conveyor belt and a 3-pulley mechanism to automatically collect and lift badminton shuttlecocks from the ground.</li><li>Engineered a smart classification module using an Arduino and 16 IR light sensors to evaluate feather integrity by analyzing light transmission and standard deviation, automatically separating damaged units.</li><li>Fabricated the hardware utilizing SolidWorks, aluminum profiles, and 3D-printed components, while optimizing gear ratios (12/225) for efficient conveying velocity and integrating brush-type propellers to prevent payload damage.</li><li>Validated the system's efficacy through focus groups, A/B testing, and competitive analysis against commercial products, demonstrating superior performance in cost-effectiveness and user convenience.</li></ul>
 
-# 5. Optimal pMMG Sensor Placement
-- project: Optimal pMMG Sensor Placement for Knee Extensor Analysis
-  role: KAIST URP & Follow-up Research • Project Lead & First Author
-  duration: Jun 2024 &mdash; Present
-  url: "/2024/12/02/pmmg-sensor.html"
-  description: <ul class="resume-item-list"><li>Independently conceptualized the research topic and spearheaded the entire project lifecycle—from initial hypothesis formulation to hardware design and experimental validation.</li><li>Developed a synchronized data acquisition system using an STM32 microcontroller and MS5607 pressure sensors to capture muscle volume changes via pneumatic mechanomyography (pMMG), overcoming traditional sEMG/IMU limitations.</li><li>Processed kinematic data using gait phase segmentation and Dynamic Time Warping (DTW) to map pMMG signals, establishing optimal sensor placement guidelines (e.g., 20% muscle length for vastus lateralis).</li><li>Designed and executed advanced follow-up experiments at Angel Robotics using Motion Capture systems and Force Plates to simultaneously measure pMMG signals and actual knee joint torque via inverse dynamics.</li><li>Currently drafting a first-author manuscript for journal submission detailing the quantitative assessment of knee extensor activation and joint torque estimation using pMMG sensors.</li></ul>
+# 4. DDQN Optimization
+- project: Optimization of Deep Reinforcement Learning for Control Problems
+  role: KAIST Pre-URP Program • Student Researcher
+  duration: Aug 2019 &mdash; Sep 2019
+  description: <ul class="resume-item-list"><li>Implemented and trained a Double Deep Q-Network (DDQN) agent to solve the CartPole control problem using Keras and OpenAI Gym environments.</li><li>Conducted extensive hyperparameter tuning across 11 variables (e.g., learning rate, epsilon decay, network depth, activation functions) to stabilize the learning process and maximize reward acquisition.</li><li>Evaluated the model's performance over 1,000 episodes, establishing that the optimized DDQN model achieved the success threshold (average score > 195) in just 151.8 episodes on average.</li><li>Significantly improved learning efficiency, outperforming the default model's baseline of 549.6 episodes by approximately 72%.</li><li>Completed intensive 2-week on-site research mentored by Professor Jeha Ryu at the Gwangju Institute of Science and Technology (GIST).</li></ul>
+
+# 5. Drone Landing Gear
+- project: Development of a Drone Landing Gear Mimicking Feline Skeletal Structure
+  role: IASA SA (Steam Activity) Research Project • Student Researcher
+  duration: Mar 2019 &mdash; Dec 2019
+  url: "/2019/04/01/landing-gear.html"
+  description: <ul class="resume-item-list"><li>Designed and 3D-printed a biomimetic drone landing gear inspired by a cat's skeletal structure to ensure safe landings and minimize payload damage.</li><li>Engineered a shock-absorbing joint mechanism utilizing the repulsive force of neodymium magnets and PVC foam, completing 7 iterative design revisions to optimize joint angles up to 152 degrees.</li><li>Conducted drop experiments using PASCO ultrasonic sensors and Capstone software to analyze kinematics (position, velocity, acceleration), identifying that a radial leg arrangement yields superior buffer performance.</li><li>Validated the prototype's shock-absorbing capabilities, successfully achieving stable landings for a 1.5kg payload from a 1m height and a 3kg payload from a 50cm height.</li></ul>
