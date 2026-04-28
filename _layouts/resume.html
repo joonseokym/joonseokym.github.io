@@ -260,17 +260,17 @@
         <h2>Contact Me</h2>
         <div class="contact-options">
           <div class="contact-option">
-            <p><strong>Primary:</strong> contact@joonseokym.com</p>
+            <p><strong>Primary:</strong> <span id="email-primary-text"></span></p>
             <div class="contact-actions">
-              <a href="mailto:contact@joonseokym.com" class="action-btn">Send Email</a>
-              <button onclick="copyToClipboard('contact@joonseokym.com')" class="action-btn">Copy</button>
+              <a href="#" id="email-primary-link" class="action-btn">Send Email</a>
+              <button id="email-primary-copy" class="action-btn">Copy</button>
             </div>
           </div>
           <div class="contact-option">
-            <p><strong>Academic:</strong> joonseo@kaist.ac.kr</p>
+            <p><strong>Academic:</strong> <span id="email-academic-text"></span></p>
             <div class="contact-actions">
-              <a href="mailto:joonseo@kaist.ac.kr" class="action-btn">Send Email</a>
-              <button onclick="copyToClipboard('joonseo@kaist.ac.kr')" class="action-btn">Copy</button>
+              <a href="#" id="email-academic-link" class="action-btn">Send Email</a>
+              <button id="email-academic-copy" class="action-btn">Copy</button>
             </div>
           </div>
         </div>
@@ -278,6 +278,25 @@
     </div>
 
     <script>
+      // Email obfuscation to prevent spam bots
+      document.addEventListener('DOMContentLoaded', function() {
+        const u1 = "contact";
+        const d1 = "joonseokym.com";
+        const email1 = u1 + "@" + d1;
+
+        const u2 = "joonseo";
+        const d2 = "kaist.ac.kr";
+        const email2 = u2 + "@" + d2;
+
+        document.getElementById('email-primary-text').textContent = email1;
+        document.getElementById('email-primary-link').href = "mailto:" + email1;
+        document.getElementById('email-primary-copy').onclick = function() { copyToClipboard(email1); };
+
+        document.getElementById('email-academic-text').textContent = email2;
+        document.getElementById('email-academic-link').href = "mailto:" + email2;
+        document.getElementById('email-academic-copy').onclick = function() { copyToClipboard(email2); };
+      });
+
       function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(function() {
           alert('Copied to clipboard: ' + text);
