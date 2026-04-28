@@ -25,6 +25,7 @@
 - project: Optimization of Deep Reinforcement Learning for Control Problems
   role: KAIST Pre-URP Program • Student Researcher
   duration: Aug 2019 &mdash; Sep 2019
+  url: "/2019/09/01/ddqn-optimization.html"
   description: <ul class="resume-item-list"><li>Implemented and trained a Double Deep Q-Network (DDQN) agent to solve the CartPole control problem using Keras and OpenAI Gym environments.</li><li>Conducted extensive hyperparameter tuning across 11 variables (e.g., learning rate, epsilon decay, network depth, activation functions) to stabilize the learning process and maximize reward acquisition.</li><li>Evaluated the model's performance over 1,000 episodes, establishing that the optimized DDQN model achieved the success threshold (average score > 195) in just 151.8 episodes on average.</li><li>Significantly improved learning efficiency, outperforming the default model's baseline of 549.6 episodes by approximately 72%.</li><li>Completed intensive 2-week on-site research mentored by Professor Jeha Ryu at the Gwangju Institute of Science and Technology (GIST).</li></ul>
 
 # 5. Drone Landing Gear
