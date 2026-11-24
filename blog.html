@@ -1,19 +1,21 @@
 ---
 layout: post
-title: "Posts"
+title: "Research projects"
+hide_eyebrow: true
 ---
 
-<ul class="resume-item-list">
-  {% for post in site.posts %}
-  <li style="margin-bottom: 15px">
-    <a href="{{ post.url | relative_url }}" style="
-        text-decoration: none;
-        color: inherit;
-        font-weight: bold;
-        font-size: 1.1em;
-      ">
-      {{ post.title }}
-    </a>
-  </li>
+<div class="project-grid">
+  {% for project in site.data.projects %}
+  <a class="project-card" href="{{ project.url | relative_url }}">
+    {% if project.image %}
+    <img class="project-image" src="{{ project.image | relative_url }}" alt="" loading="lazy" />
+    {% endif %}
+    <div class="project-body">
+      <div class="project-meta">{{ project.duration | replace: '&mdash;', '–' }}<br>{{ project.role | replace: ' • ', ' · ' }}</div>
+      <h3 class="project-title">{{ project.project }}</h3>
+      {% if project.summary %}<p class="project-summary">{{ project.summary }}</p>{% endif %}
+      <span class="project-link">Read more →</span>
+    </div>
+  </a>
   {% endfor %}
-</ul>
+</div>

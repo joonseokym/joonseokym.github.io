@@ -1,13 +1,13 @@
 # Projects
 
-# 1. Optimal pMMG Sensor Placement
-- project: Optimal pMMG Sensor Placement for Knee Extensor Analysis
+# 1. pMMG Sensor Placement
+- project: pMMG Sensor Placement for Knee Extension Torque Analysis
   role: KAIST URP & Follow-up Research • Project Lead & First Author
   duration: Jun 2024 &mdash; Present
   url: "/2024/12/02/pmmg-sensor.html"
   image: "/_assets/photos/thumbs/pmmg-sensor.jpg"
-  summary: "STM32-based pMMG acquisition, gait-phase DTW analysis, and knee torque validation at Angel Robotics."
-  description: <ul class="resume-item-list"><li>Independently conceptualized the research topic and spearheaded the entire project lifecycle—from initial hypothesis formulation to hardware design and experimental validation.</li><li>Developed a synchronized data acquisition system using an STM32 microcontroller and MS5607 pressure sensors to capture muscle volume changes via pneumatic mechanomyography (pMMG), overcoming traditional sEMG/IMU limitations.</li><li>Processed kinematic data using gait phase segmentation and Dynamic Time Warping (DTW) to map pMMG signals, establishing optimal sensor placement guidelines (e.g., 20% muscle length for vastus lateralis).</li><li>Designed and executed advanced follow-up experiments at Angel Robotics using Motion Capture systems and Force Plates to simultaneously measure pMMG signals and actual knee joint torque via inverse dynamics.</li><li>Submitted a first-author manuscript to <i>Journal of Sensors</i> (Wiley), currently under review, detailing the quantitative assessment of knee extensor activation and joint torque estimation using pMMG sensors.</li></ul>
+  summary: "Mapped where pMMG sensors best reflect knee joint torque across 20–60% thigh positions, identifying VM 20% and VL 30% as candidate sites."
+  description: <ul class="resume-item-list"><li>Conceptualized the study with my advisor and led it from hypothesis formulation through hardware design, experiments, and analysis.</li><li>Developed a data acquisition system using an STM32 microcontroller and MS5607 pressure sensors to measure muscle deformation via pneumatic mechanomyography (pMMG), a wearable modality robust to electrical noise.</li><li>Measured pMMG responses at 20–60% thigh-length positions on the vastus medialis, vastus lateralis, and biceps femoris during squat, single-leg squat, crouch gait, and walking, and quantified their association with knee joint torque (R²).</li><li>Designed and executed follow-up experiments at Angel Robotics using a Vicon motion-capture system and a force-plate treadmill to obtain reference knee joint torque via inverse dynamics.</li><li>Identified VM 20% and VL 30% as candidate attachment positions (squat-group R² of 0.752 and 0.824) and submitted a first-author manuscript to <i>Journal of Sensors</i> (Wiley), currently under review.</li></ul>
 
 # 2. Twisted String CPM Actuator
 - project: Development of a Circular Twisted String Continuous Passive Motion Actuator

@@ -4,7 +4,7 @@
   description: Korean (Native), English (Fluent), German (Basic)
 
 - skill: Programming & Software
-  description: Python, C, SolidWorks (CAD)
+  description: Python, C, C++ (Arduino), STM32 (STM32CubeIDE), LabVIEW, Keras, SolidWorks (CAD)
 
 - skill: Robotics & Engineering
   description: System Modeling & Control, Dynamics, Mechanical Vibrations, Circuit Theory
@@ -13,4 +13,4 @@
   description: Mechatronic System Integration, 3D Printing, Sensor Fabrication (pMMG), Actuator Interfacing
 
 - skill: Research & Analytics
-  description: Real-time Data Acquisition, Signal Processing, Experimental Validation, Scientific Writing
+  description: Real-time Data Acquisition, Motion Capture (Vicon), Signal Processing, Experimental Validation, Scientific Writing
