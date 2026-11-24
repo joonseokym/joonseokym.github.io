@@ -3,7 +3,7 @@ title: "Joonseo Kym's Resume"
 description: "The resume of Joonseo Kym, an undergraduate student at KAIST."
 url: "https://joonseokym.com" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-og_image: "/_assets/photos/og-image-2026.png" # 공유 시 나타날 기본 이미지 경로
+og_image: "/_assets/photos/og-image-2026-v2.png" # 공유 시 나타날 기본 이미지 경로
 
 # Build settings
 markdown: kramdown
