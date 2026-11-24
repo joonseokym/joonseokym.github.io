@@ -249,6 +249,23 @@
     padding-top: 2px;
   }
 
+  .entry-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .entry-logo {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    object-fit: contain;
+    padding: 3px;
+    background: $white;
+    border: 1px solid $line;
+    border-radius: 7px;
+  }
+
   .entry-title {
     font-size: 17px;
     font-weight: 600;
