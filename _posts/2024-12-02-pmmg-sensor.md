@@ -29,7 +29,7 @@ The project ran in two rounds. A first-round experiment (Fig. 1 and Fig. 3) was 
 Each pMMG sensor contains an MS5607 pressure sensor and is read by an STM32 microcontroller (NUCLEO-G474RE) at 200 Hz, with the firmware developed in **STM32CubeIDE**. In the second round, the sensor was fixed with sports tape and then secured with an elastic band so it stayed at the same spot on the skin throughout the experiment. Reference knee joint torque was computed from a **Vicon** motion-capture system and a force-plate treadmill (MOTEK) using the plug-in gait dynamics model.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}')">
+  <img src="{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.jpg' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Second-Round Setup</span>
     Thigh-mounted pMMG sensors with motion-capture markers on the force-plate treadmill.
@@ -41,8 +41,8 @@ Attachment positions were expressed as a percentage of thigh length, from the di
 #### 3. Protocol & Analysis
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/squat_exp.png' | relative_url }}" alt="Squat task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/squat_exp.png' | relative_url }}')">
-  <img src="{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}" alt="Walking task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}')">
+  <img src="{{ '/_assets/photos/pmmg-sensor/squat_exp.jpg' | relative_url }}" alt="Squat task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/squat_exp.jpg' | relative_url }}')">
+  <img src="{{ '/_assets/photos/pmmg-sensor/gait_exp.jpg' | relative_url }}" alt="Walking task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/gait_exp.jpg' | relative_url }}')">
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
   <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: First-Round Movement Tasks</span>
