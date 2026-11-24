@@ -144,25 +144,65 @@
 
 .icon-links {
   display: inline-flex;
-  gap: 4px;
-  margin: 0 0 0 6px;
+  gap: 8px;
+  margin: 0 0 0 8px;
   padding: 0;
   list-style: none;
 
-  .icon-link {
-    display: inline-flex;
-    padding: 6px;
-    border-radius: 8px;
+  .icon-link-item { display: inline-flex; }
 
-    &:hover { background: $band; }
-    &:hover .icon path { fill: $text; }
+  .icon-link {
+    --brand: #{$text};
+    --brand-tint: #{$band};
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--brand-tint);
+    transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+
+      path { fill: var(--brand); transition: fill .2s ease; }
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: var(--brand);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+
+      .icon path { fill: $white; }
+    }
   }
 
-  .icon {
-    width: 22px;
-    height: 22px;
+  .icon-link-github {
+    --brand: #181717;
+    --brand-tint: #eeeff1;
+  }
 
-    path { fill: #9aa1ab; transition: fill .15s ease; }
+  .icon-link-linkedin {
+    --brand: #0a66c2;
+    --brand-tint: #e8f0fa;
+  }
+
+  .icon-link-instagram {
+    --brand: #e1306c;
+    --brand-tint: #fdecf2;
+
+    &:hover,
+    &:focus-visible {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    }
+  }
+
+  @include media_mobile {
+    margin-left: 0;
   }
 }
 
