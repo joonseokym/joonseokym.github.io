@@ -31,7 +31,7 @@ resume_header_intro: "<p>
   <br><br>
   I started with mechanisms, including a <a href='/2021/04/01/twisted-string-cpm.html'>wearable twisted-string actuator</a> that became a <a href='https://patents.google.com/patent/KR102635233B1/en' target='_blank' rel='noopener'>registered patent</a> and won a Fourth Award at Regeneron ISEF. At KAIST's Exoskeleton Lab I moved into wearable sensing, and I now lead a <a href='/2024/12/02/pmmg-sensor.html'>first-author study on pMMG sensor placement</a> for knee extension torque analysis.
   <br><br>
-  Next, I'm starting an individual research project on robot hardware design at the RAI Lab.
+  Next, I'm starting an individual research project on robot hardware design at KAIST's <a href='https://railab.kaist.ac.kr/' target='_blank' rel='noopener'>Robotics and Artificial Intelligence Lab</a> (Prof. Jemin Hwangbo), which designs and builds its own legged robots such as RAIBO.
 </p>"
 
 # use "yes" to display the email contact button,
