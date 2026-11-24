@@ -19,7 +19,7 @@ Engineered a wheel-powered conveyor belt system with brush-type propellers to sw
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/shuttlecock-sweeper/CADAssembly.png' | relative_url }}" alt="CAD Assembly" style="width: 40%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/CADAssembly.png' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 1: CAD Assembly*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: CAD Assembly</span>
     CAD assembly of the sweeping mechanism.
   </p>
 </div>
@@ -30,7 +30,7 @@ Developed an Arduino-controlled sorting module utilizing 16 IR light sensors to 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/shuttlecock-sweeper/datavisualize.jpeg' | relative_url }}" alt="Data Visualization" style="width: 100%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/datavisualize.jpeg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 2: Feather Integrity Evaluation*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Feather Integrity Evaluation</span>
     Data visualization of light transmission used to evaluate feather integrity.
   </p>
 </div>
@@ -46,7 +46,7 @@ Developed an Arduino-controlled sorting module utilizing 16 IR light sensors to 
   <img src="{{ '/_assets/photos/shuttlecock-sweeper/prototype_top.png' | relative_url }}" alt="Prototype Top" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/prototype_top.png' | relative_url }}')">
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
-  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 3: Assembled Prototype*</span>
+  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Assembled Prototype</span>
   The 3D-printed and fully assembled prototype from various angles.
 </p>
 
@@ -64,7 +64,7 @@ Conducted extensive A/B testing, focus group interviews, and competitive analysi
   </video>
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
-  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 4: Performance Validation*</span>
+  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 4: Performance Validation</span>
   Test videos showing the shuttlecock sweeping and lifting process.
 </p>
 

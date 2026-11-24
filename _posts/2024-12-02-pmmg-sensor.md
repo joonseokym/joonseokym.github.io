@@ -19,7 +19,7 @@ Conventional sEMG sensors are highly susceptible to sweat-induced signal distort
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" alt="Final assembled sensor and 3D housing" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 1: Assembled pMMG Sensor*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: Assembled pMMG Sensor</span>
     The final assembled pMMG sensor and its 3D-printed housing.
   </p>
 </div>
@@ -27,7 +27,7 @@ Conventional sEMG sensors are highly susceptible to sweat-induced signal distort
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.png' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 2: Sensor Attachment*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Sensor Attachment</span>
     Sensor attachment on the thigh for data acquisition.
   </p>
 </div>
@@ -41,7 +41,7 @@ To accommodate diverse body types and control external variables like band tensi
   <img src="{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}" alt="Gait Experiment" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/gait_exp.png' | relative_url }}')">
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
-  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 3: Experimental Setup*</span>
+  <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Experimental Setup</span>
   Simultaneous measurement of pMMG pressure and knee joint torque during squat and walking tasks.
 </p>
 
@@ -49,14 +49,14 @@ To accommodate diverse body types and control external variables like band tensi
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}" alt="Data Monitoring Interface" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/datamonitoring.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 4: Real-time Data Monitoring Interface (Representative sEMG GUI)*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 4: Real-time Data Monitoring Interface (Representative sEMG GUI)</span>
       While pMMG-specific captures were not preserved, this representative interface illustrates the real-time acquisition system used, featuring core controls and multi-channel waveform displays for immediate signal verification.
     </p>
   </div>
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}" alt="Hardware Configuration" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 5: Hardware Configuration*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 5: Hardware Configuration</span>
       Pinout configuration of the STM32G474RETx MCU in STM32CubeIDE, detailing SPI and ADC assignments essential for processing raw pMMG and sEMG signals.
     </p>
   </div>

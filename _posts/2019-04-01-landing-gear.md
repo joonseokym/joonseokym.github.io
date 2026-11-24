@@ -21,14 +21,14 @@ Developed a 3D-printed landing gear that replicates the leg proportions of a cat
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/landing-gear/straightleg.jpeg' | relative_url }}" alt="Straight Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/straightleg.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 1: Straight (11-shaped) Leg Arrangement Model*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: Straight (11-shaped) Leg Arrangement Model</span>
       Initial design mimicking a cat's straight leg stance. Neodymium magnets between joints act as shock-absorbing springs.
     </p>
   </div>
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/landing-gear/radialleg.jpeg' | relative_url }}" alt="Radial Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/radialleg.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 2: Radial Leg Arrangement Model*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Radial Leg Arrangement Model</span>
       Legs are attached radially to distribute impact evenly, offering superior shock absorption and landing stability.
     </p>
   </div>
@@ -43,7 +43,7 @@ Drop experiments were conducted using a PASCO motion (ultrasonic) sensor to cont
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/landing-gear/expsetup.jpeg' | relative_url }}" alt="Setup for the Drop Experiment" style="width: 60%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/expsetup.jpeg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 3: Drop Experiment Setup*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Drop Experiment Setup</span>
     A central rod ensures a straight vertical drop, while weights are distributed circularly to prevent structural damage.
   </p>
 </div>
@@ -57,7 +57,7 @@ Drop experiments were conducted using a PASCO motion (ultrasonic) sensor to cont
 </div>
 
 <p style="margin-top: 20px; font-size: 0.9em; color: #666; font-style: italic; text-align: center;">
-  *Note: This research was conducted and originally published under the name Joonseo Kim.*
+  Note: This research was conducted and originally published under the name Joonseo Kim.
 </p>
 
 <div id="unified-image-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">

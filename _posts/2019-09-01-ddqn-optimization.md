@@ -19,7 +19,7 @@ Implemented a DDQN algorithm using Keras and the OpenAI Gym CartPole environment
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/PreURP/Fig1.jpeg' | relative_url }}" alt="CartPole Simulation Environment" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/PreURP/Fig1.jpeg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
-    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 1: CartPole Simulation Environment*</span>
+    <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: CartPole Simulation Environment</span>
     The OpenAI Gym CartPole environment where the DDQN agent was trained to balance the pole by applying lateral forces to the cart.
   </p>
 </div>
@@ -34,14 +34,14 @@ Evaluated the optimized DDQN model against the default model over 1,000 episodes
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/PreURP/Fig2.jpeg' | relative_url }}" alt="Default Model Performance" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/PreURP/Fig2.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 2: Default Model Learning Curve*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Default Model Learning Curve</span>
       Graph of 1000 running episodes using the default parameters. Note the instability and failure of two trials to reach the threshold.
     </p>
   </div>
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/_assets/photos/PreURP/Fig3.jpeg' | relative_url }}" alt="Optimized Model Performance" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/PreURP/Fig3.jpeg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
-      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">*Fig. 3: Optimized Model Learning Curve*</span>
+      <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Optimized Model Learning Curve</span>
       Graph of 1000 running episodes using the tuned hyperparameters. Convergence is much faster, achieving stability in an average of 151.8 episodes.
     </p>
   </div>
@@ -56,7 +56,7 @@ Evaluated the optimized DDQN model against the default model over 1,000 episodes
 </div>
 
 <p style="margin-top: 20px; font-size: 0.9em; color: #666; font-style: italic; text-align: center;">
-  *Note: This research was conducted and originally published under the name Joonseo Kim.*
+  Note: This research was conducted and originally published under the name Joonseo Kim.
 </p>
 
 <div id="unified-image-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
