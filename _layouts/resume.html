@@ -135,6 +135,21 @@
         <h2>Patents & Publications</h2>
       </header>
 
+      {% for pub in site.data.publications %}
+      <div class="resume-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+        <h3 class="resume-item-title" itemprop="name">
+          {{ pub.title }}
+          {% if pub.url %}
+          <a href="{{ pub.url | relative_url }}" class="view-details-badge">View Project Details</a>
+          {% endif %}
+        </h3>
+        <h4 class="resume-item-details">
+          {{ pub.venue }} &bull; {{ pub.status }}, {{ pub.year }}
+        </h4>
+        <p class="resume-item-copy">{{ pub.authors }}</p>
+      </div>
+      {% endfor %}
+
       {% for patent in site.data.patents %}
       <div class="resume-item">
         <h3 class="resume-item-title">
