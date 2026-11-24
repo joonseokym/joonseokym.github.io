@@ -63,7 +63,7 @@ For each sensor position, a passive knee movement trial (no voluntary contractio
 
 #### 4. Results
 * **VM and VL track knee torque far better than BF.** Across squat, single-leg squat, and crouch gait, the position-averaged R² of VM and VL was higher than that of BF, consistent with their roles as knee extensors.
-* **Candidate positions: VM 20% and VL 30%.** In the squat group, the strongest relationships were at VM 20% (R² = 0.752) and VL 30% (R² = 0.824), which were 43.8% and 98.1% higher than at the worst positions of each muscle.
+* **Candidate positions: VM 20% and VL 30%.** In the squat group, the strongest relationships with knee torque were at VM 20% and VL 30%, clearly stronger than at the other positions on each muscle.
 * **Best positions sit distal to the muscle belly.** VL's best position lay distal to its largest cross-section, suggesting that soft-tissue thickness and signal transmission matter as well as muscle-belly location. Both candidates are close to the distal SENIAM sEMG electrode sites.
 * **Walking gives weak, variable relationships.** With a narrow torque range and more movement artifacts, walking produced low R², so it was treated as a comparison condition rather than a basis for choosing positions.
 
