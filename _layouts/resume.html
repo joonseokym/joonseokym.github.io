@@ -53,7 +53,7 @@
         <div class="entry" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
           <div class="entry-date">{{ education.year | replace: ' &mdash; ', ' – <br>' }}</div>
           <div>
-            <div class="entry-heading">{% if education.logo %}<img class="entry-logo" src="{{ education.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ education.uni }}</h3></div>
+            <div class="entry-heading">{% if education.logo %}<img class="entry-logo{% if education.logo_wide %} entry-logo-wide{% endif %}" src="{{ education.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ education.uni }}</h3></div>
             <p class="entry-meta">{{ education.degree }}{% if education.gpa and education.gpa != "" %} · GPA {{ education.gpa }}{% endif %}</p>
             {% if education.summary and education.summary != "" %}
             <div class="entry-body"><p>{{ education.summary }}</p></div>
@@ -73,7 +73,7 @@
         <div class="entry" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <div class="entry-date">{{ job.duration | replace: ' &mdash; ', ' – <br>' }}</div>
           <div>
-            <div class="entry-heading">{% if job.logo %}<img class="entry-logo" src="{{ job.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ job.company }}</h3></div>
+            <div class="entry-heading">{% if job.logo %}<img class="entry-logo{% if job.logo_wide %} entry-logo-wide{% endif %}" src="{{ job.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ job.company }}</h3></div>
             <p class="entry-meta">{{ job.position }}</p>
             <div class="entry-body">{{ job.summary }}</div>
           </div>
@@ -181,7 +181,7 @@
         <div class="entry" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <div class="entry-date">{{ association.year | replace: ' &mdash; ', ' – <br>' }}</div>
           <div>
-            <div class="entry-heading">{% if association.logo %}<img class="entry-logo" src="{{ association.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ association.organization }}</h3></div>
+            <div class="entry-heading">{% if association.logo %}<img class="entry-logo{% if association.logo_wide %} entry-logo-wide{% endif %}" src="{{ association.logo | relative_url }}" alt="" loading="lazy" />{% endif %}<h3 class="entry-title" itemprop="name">{{ association.organization }}</h3></div>
             <p class="entry-meta">{{ association.role }}</p>
             <div class="entry-body">{{ association.summary }}</div>
           </div>

@@ -264,6 +264,12 @@
     background: $white;
     border: 1px solid $line;
     border-radius: 7px;
+
+    &.entry-logo-wide {
+      width: auto;
+      max-width: 80px;
+      padding: 3px 6px;
+    }
   }
 
   .entry-title {
