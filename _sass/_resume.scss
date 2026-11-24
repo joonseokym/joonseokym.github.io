@@ -4,6 +4,10 @@
 // Top navigation
 
 .site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.94);
   border-bottom: 1px solid $line;
   font-size: 14px;
 
@@ -18,6 +22,8 @@
   .site-nav-name {
     font-weight: 600;
     color: $text;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .site-nav-links {
@@ -26,15 +32,30 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    min-width: 0;
 
-    a { color: #555; }
+    a { color: #555; white-space: nowrap; }
     a:hover { color: $accent; }
   }
 
   @include media_mobile {
-    .site-nav-links { display: none; }
+    font-size: 13px;
+
+    .wrapper { gap: 14px; }
+
+    .site-nav-links {
+      gap: 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 0;
+
+      &::-webkit-scrollbar { display: none; }
+    }
   }
 }
+
+.content-section { scroll-margin-top: 60px; }
 
 // Hero
 
