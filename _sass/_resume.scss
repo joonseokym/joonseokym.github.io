@@ -7,7 +7,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.94);
+  background: $white;
   border-bottom: 1px solid $line;
   font-size: 14px;
 
@@ -48,7 +48,9 @@
       overflow-x: auto;
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
-      padding: 4px 0;
+      padding: 4px 18px 4px 0;
+      -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+      mask-image: linear-gradient(to right, #000 85%, transparent);
 
       &::-webkit-scrollbar { display: none; }
     }
@@ -422,11 +424,17 @@
   }
 
   @include media_mobile {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 14px;
-    padding: 12px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    column-gap: 14px;
+    row-gap: 0;
+    padding: 16px;
 
-    .project-body { padding: 0 4px 4px; }
+    .project-image { grid-column: 1; grid-row: 1 / span 2; aspect-ratio: 1 / 1; border-radius: 6px; }
+    .project-body { display: contents; }
+    .project-meta { grid-column: 2; grid-row: 1; font-size: 12.5px; }
+    .project-title { grid-column: 2; grid-row: 2; font-size: 16px; margin-top: 4px; }
+    .project-summary { grid-column: 1 / -1; grid-row: 3; font-size: 14.5px; line-height: 1.6; margin-top: 12px; }
+    .project-link { grid-column: 1 / -1; grid-row: 4; font-size: 14px; padding-top: 10px; }
   }
 
   .project-meta {
@@ -575,4 +583,25 @@
   .project-card { border: none; border-top: 1px solid $line; border-radius: 0; break-inside: avoid; }
   .project-card .project-image { display: none; }
   .project-card .project-body { padding: 8px 0; }
+}
+
+// Mobile reading comfort
+
+@include media_mobile {
+  .content-section { padding: 36px 0 8px; }
+  .content-section.band { padding: 36px 0; margin-top: 24px; }
+  .content-section .section-header h2 { font-size: 24px; margin-bottom: 8px; }
+
+  .entry {
+    padding: 18px 0;
+
+    .entry-date { font-size: 13px; font-weight: 500; color: $accent; }
+    .entry-title { font-size: 16.5px; }
+    .entry-meta { font-size: 14px; }
+    .entry-body { font-size: 15px; line-height: 1.7; margin-top: 10px; }
+    .entry-body li { margin: 0 0 8px; }
+    .entry-body li:last-child { margin-bottom: 0; }
+  }
+
+  .hero .executive-summary { font-size: 15.5px; line-height: 1.7; }
 }
