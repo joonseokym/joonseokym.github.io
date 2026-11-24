@@ -2,14 +2,14 @@
 
 - degree: Bachelor of Mechanical Engineering & Electrical Engineering
   uni: KAIST (Korea Advanced Institute of Science and Technology)
-  logo: "/images/logos/kaist.png"
+  logo: "/assets/images/logos/kaist.png"
   year: Expected Aug 2029
   gpa: "3.77 / 4.30"
   summary: "Relevant Coursework: Introduction to Robotics Engineering, System Modeling and Control, Mechatronics System Design, Mechanical Vibrations, Data Structures, Solid Mechanics, Dynamics, Signals and Systems, Circuit Theory"
 
 - degree: National School for Gifted Students
   uni: IASA (Incheon Academy of Science and Arts)
-  logo: "/images/logos/iasa.png"
+  logo: "/assets/images/logos/iasa.png"
   year: Mar 2019 &mdash; Feb 2022
   gpa: ""
   summary: ""

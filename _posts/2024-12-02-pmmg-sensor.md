@@ -17,7 +17,7 @@ Wearable muscle sensors each have practical weaknesses: sEMG is sensitive to ele
 #### 2. Hardware & Experimental Setup
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}" alt="Assembled pMMG sensors" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/sensor_and_housing.jpeg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/pmmg-sensor/sensors.jpg' | relative_url }}" alt="Assembled pMMG sensors" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/pmmg-sensor/sensors.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: First-Round pMMG Sensors</span>
     Sensors and bands built for the first-round experiment.
@@ -29,7 +29,7 @@ The project ran in two rounds. A first-round experiment (Fig. 1 and Fig. 3) was 
 Each pMMG sensor contains an MS5607 pressure sensor and is read by an STM32 microcontroller (NUCLEO-G474RE) at 200 Hz, with the firmware developed in **STM32CubeIDE**. In the second round, the sensor was fixed with sports tape and then secured with an elastic band so it stayed at the same spot on the skin throughout the experiment. Reference knee joint torque was computed from a **Vicon** motion-capture system and a force-plate treadmill (MOTEK) using the plug-in gait dynamics model.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.jpg' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/thigh_pmmg.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/pmmg-sensor/thigh-attachment.jpg' | relative_url }}" alt="Sensor attachment on the thigh" style="width: 50%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/pmmg-sensor/thigh-attachment.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Second-Round Setup</span>
     Thigh-mounted pMMG sensors with motion-capture markers on the force-plate treadmill.
@@ -41,8 +41,8 @@ Attachment positions were expressed as a percentage of thigh length, from the di
 #### 3. Protocol & Analysis
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/squat_exp.jpg' | relative_url }}" alt="Squat task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/squat_exp.jpg' | relative_url }}')">
-  <img src="{{ '/_assets/photos/pmmg-sensor/gait_exp.jpg' | relative_url }}" alt="Walking task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/gait_exp.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/pmmg-sensor/squat-task.jpg' | relative_url }}" alt="Squat task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/pmmg-sensor/squat-task.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/pmmg-sensor/walking-task.jpg' | relative_url }}" alt="Walking task" style="width: 49%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/pmmg-sensor/walking-task.jpg' | relative_url }}')">
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
   <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: First-Round Movement Tasks</span>
@@ -54,7 +54,7 @@ The participant performed **squat, single-leg squat, crouch gait**, and **walkin
 For each sensor position, a passive knee movement trial (no voluntary contraction) gave a baseline pressure that was subtracted from the active trials. After a 4 Hz low-pass filter, I computed the squared Pearson correlation **R²** between the pMMG pressure response and knee joint torque for every muscle, position, and task. R² was used as a measure of linear association, not of torque-estimation accuracy.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}" alt="STM32 pin configuration" style="width: 60%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/pmmg-sensor/hwconfig.jpeg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/pmmg-sensor/stm32-pinout.jpg' | relative_url }}" alt="STM32 pin configuration" style="width: 60%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/pmmg-sensor/stm32-pinout.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 4: MCU Configuration</span>
     Pin configuration of the STM32G474RE in STM32CubeIDE for the sensor interfaces.

@@ -1,30 +1,39 @@
-# Site settings
+# ---------------------------------------------------------------
+# Site
+# ---------------------------------------------------------------
 title: "Joonseo Kym's Resume"
 description: "Mechanical & Electrical Engineering at KAIST. Robotic hardware, mechanism design, and wearable sensing."
-url: "https://joonseokym.com" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
-og_image: "/_assets/photos/og-image-2026.png" # 공유 시 나타날 기본 이미지 경로
+url: "https://joonseokym.com"
+baseurl: ""
+og_image: "/assets/images/og-image-2026.png"   # link preview image (rename the file to force a refresh)
 
-# Build settings
+# ---------------------------------------------------------------
+# Build (restart `jekyll serve` after editing this file)
+# ---------------------------------------------------------------
 markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
   quiet_deps: true
+plugins:
+  - jekyll-sitemap
+exclude:          # repo-only files that should not be published
+  - README.md
+  - LICENSE
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
 
-# Resume settings
-resume_avatar: "true"
+# ---------------------------------------------------------------
+# Header
+# ---------------------------------------------------------------
 resume_name: "Joonseo Kym"
 resume_title: "Undergraduate in Mechanical & Electrical Engineering, KAIST"
-
-# used for the contact button in _layouts/resume.html
-resume_contact_email: "joonseo@kaist.ac.kr"
-
-# the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_address: "Daejeon, South Korea"
-
-resume_header_contact_info: "Daejeon, South Korea • joonseo@kaist.ac.kr"
-display_header_contact_info: "false"
+resume_avatar: "true"
+resume_contact_address: "Daejeon, South Korea"   # schema.org metadata only
+resume_cv_url: "/assets/cv/Joonseo_Kym_CV.pdf"
+resume_looking_for_work: "yes"                     # "yes" shows the Contact me button
 
 resume_header_intro: "<p>
   I build robotic hardware end to end, from mechanism design and fabrication to sensing, data acquisition, and control.
@@ -34,48 +43,29 @@ resume_header_intro: "<p>
   Next, I'm starting an individual research project on robot hardware design at KAIST's <a href='https://railab.kaist.ac.kr/' target='_blank' rel='noopener'>Robotics and Artificial Intelligence Lab</a> (Prof. Jemin Hwangbo), which designs and builds its own legged robots such as RAIBO.
 </p>"
 
-# use "yes" to display the email contact button,
-# "no" to display an "I'm not looking for work" message,
-# or remove the resume_looking_for_work option entirely
-# to leave blank
-resume_looking_for_work: "yes"
-# CV Download Link
-resume_cv_url: "/_assets/pdf/Joonseo_Kym_CV.pdf"
-
-# Decide which sections to use
-# comment out to hide
-resume_section_experience: true
+# ---------------------------------------------------------------
+# Sections (comment out a line to hide that section)
+# ---------------------------------------------------------------
 resume_section_education: true
+resume_section_experience: true
 resume_section_projects: true
-resume_section_skills: true
 resume_section_patents: true
 resume_section_recognition: true
-resume_section_links: true
-resume_section_associations: true
 resume_section_military: true
-# resume_section_interests:       true
+resume_section_associations: true
+resume_section_skills: true
+# resume_section_interests: true
 
-# Resume social links
-# uncomment the options you wish to display, and add your own URL
+# ---------------------------------------------------------------
+# Social links (GitHub, LinkedIn, and Instagram are supported)
+# ---------------------------------------------------------------
 resume_social_links:
   resume_github_url: "https://github.com/joonseokym"
-  # resume_twitter_url: "http://twitter.com/jglovier"
-  # resume_dribbble_url: "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url: "https://www.linkedin.com/in/joonseokym/"
   # resume_instagram_url: "https://www.instagram.com/ssemiwest/"
-  # resume_website_url: "http://joelglovier.com"
-  # resume_medium_url: "https://medium.com/@jglovier"
 resume_print_social_links: true
 
-# Design settings
+# ---------------------------------------------------------------
+# Theme
+# ---------------------------------------------------------------
 resume_theme: default
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
-
-plugins:
-  - jekyll-sitemap
-# Jekyll이 무시하는 언더바(_) 폴더를 강제로 포함시키는 설정
-include:
-  - "_assets"

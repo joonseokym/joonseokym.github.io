@@ -32,12 +32,6 @@ a {
   margin: 0 auto;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 ::selection {
   background: $accent-soft;
   color: $text;

@@ -19,14 +19,14 @@ Developed a 3D-printed landing gear that replicates the leg proportions of a cat
 
 <div style="display: flex; gap: 20px; margin-top: 20px; margin-bottom: 30px; align-items: flex-start;">
   <div style="flex: 1; text-align: center;">
-    <img src="{{ '/_assets/photos/landing-gear/straightleg.jpeg' | relative_url }}" alt="Straight Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/straightleg.jpeg' | relative_url }}')">
+    <img src="{{ '/assets/images/projects/landing-gear/straight-leg.jpg' | relative_url }}" alt="Straight Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/landing-gear/straight-leg.jpg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
       <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: Straight (11-shaped) Leg Arrangement Model</span>
       Initial design mimicking a cat's straight leg stance. Neodymium magnets between joints act as shock-absorbing springs.
     </p>
   </div>
   <div style="flex: 1; text-align: center;">
-    <img src="{{ '/_assets/photos/landing-gear/radialleg.jpeg' | relative_url }}" alt="Radial Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/radialleg.jpeg' | relative_url }}')">
+    <img src="{{ '/assets/images/projects/landing-gear/radial-leg.jpg' | relative_url }}" alt="Radial Leg Arrangement" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/landing-gear/radial-leg.jpg' | relative_url }}')">
     <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: left;">
       <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Radial Leg Arrangement Model</span>
       Legs are attached radially to distribute impact evenly, offering superior shock absorption and landing stability.
@@ -41,7 +41,7 @@ Drop tests demonstrated that a 1.5kg model could reliably land from a height of 
 Drop experiments were conducted using a PASCO motion (ultrasonic) sensor to continuously measure position, velocity, and acceleration. The results verified that the mechanism successfully generated a damped oscillation, which effectively prolonged the impact time and significantly reduced the overall impact force.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/landing-gear/expsetup.jpeg' | relative_url }}" alt="Setup for the Drop Experiment" style="width: 60%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/landing-gear/expsetup.jpeg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/landing-gear/drop-test-setup.jpg' | relative_url }}" alt="Setup for the Drop Experiment" style="width: 60%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/landing-gear/drop-test-setup.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Drop Experiment Setup</span>
     A central rod ensures a straight vertical drop, while weights are distributed circularly to prevent structural damage.
@@ -51,7 +51,7 @@ Drop experiments were conducted using a PASCO motion (ultrasonic) sensor to cont
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="{{ '/_assets/pdf/DroneLandingGear_Cat.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #2f5d8a; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <a href="{{ '/assets/docs/landing-gear-paper-ko.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #2f5d8a; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     📄 Download Full Research Paper (PDF, Korean)
   </a>
 </div>

@@ -17,7 +17,7 @@ Manually collecting and sorting damaged shuttlecocks after badminton practice is
 Engineered a wheel-powered conveyor belt system with brush-type propellers to sweep and lift shuttlecocks without requiring an external power source for mobility.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/shuttlecock-sweeper/CADAssembly.png' | relative_url }}" alt="CAD Assembly" style="width: 40%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/CADAssembly.png' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/shuttlecock-sweeper/cad-assembly.png' | relative_url }}" alt="CAD Assembly" style="width: 40%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/shuttlecock-sweeper/cad-assembly.png' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 1: CAD Assembly</span>
     CAD assembly of the sweeping mechanism.
@@ -28,7 +28,7 @@ Engineered a wheel-powered conveyor belt system with brush-type propellers to sw
 Developed an Arduino-controlled sorting module utilizing 16 IR light sensors to evaluate the structural integrity of shuttlecock feathers, automatically separating damaged units from reusable ones.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-  <img src="{{ '/_assets/photos/shuttlecock-sweeper/datavisualize.jpeg' | relative_url }}" alt="Data Visualization" style="width: 100%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/datavisualize.jpeg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/shuttlecock-sweeper/feather-light-transmission.jpg' | relative_url }}" alt="Data Visualization" style="width: 100%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/shuttlecock-sweeper/feather-light-transmission.jpg' | relative_url }}')">
   <p style="font-size: 0.9em; color: #555; margin-top: 15px; line-height: 1.6; text-align: center; max-width: 80%; margin-left: auto; margin-right: auto;">
     <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 2: Feather Integrity Evaluation</span>
     Data visualization of light transmission used to evaluate feather integrity.
@@ -41,9 +41,9 @@ Developed an Arduino-controlled sorting module utilizing 16 IR light sensors to 
 * 3D Printing & Aluminum Profile Assembly
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-top: 20px;">
-  <img src="{{ '/_assets/photos/shuttlecock-sweeper/prototype_left.jpg' | relative_url }}" alt="Prototype Left" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/prototype_left.jpg' | relative_url }}')">
-  <img src="{{ '/_assets/photos/shuttlecock-sweeper/prototype_back.jpg' | relative_url }}" alt="Prototype Back" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/prototype_back.jpg' | relative_url }}')">
-  <img src="{{ '/_assets/photos/shuttlecock-sweeper/prototype_top.jpg' | relative_url }}" alt="Prototype Top" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/shuttlecock-sweeper/prototype_top.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/shuttlecock-sweeper/prototype-left.jpg' | relative_url }}" alt="Prototype Left" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/shuttlecock-sweeper/prototype-left.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/shuttlecock-sweeper/prototype-back.jpg' | relative_url }}" alt="Prototype Back" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/shuttlecock-sweeper/prototype-back.jpg' | relative_url }}')">
+  <img src="{{ '/assets/images/projects/shuttlecock-sweeper/prototype-top.jpg' | relative_url }}" alt="Prototype Top" style="width: 32%; height: 200px; object-fit: cover; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/assets/images/projects/shuttlecock-sweeper/prototype-top.jpg' | relative_url }}')">
 </div>
 <p style="font-size: 0.9em; color: #555; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; text-align: center;">
   <span style="display: block; font-style: italic; color: #666; margin-bottom: 5px;">Fig. 3: Assembled Prototype</span>
@@ -55,11 +55,11 @@ Conducted extensive A/B testing, focus group interviews, and competitive analysi
 
 <div style="display: flex; gap: 20px; margin-top: 20px;">
   <video controls style="flex: 1; width: 50%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <source src="{{ '/_assets/videos/shuttlecock-sweeper/test1.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/videos/shuttlecock-sweeper/sweep-test-1.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <video controls style="flex: 1; width: 50%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <source src="{{ '/_assets/videos/shuttlecock-sweeper/test2.MP4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/videos/shuttlecock-sweeper/sweep-test-2.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -71,7 +71,7 @@ Conducted extensive A/B testing, focus group interviews, and competitive analysi
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="{{ '/_assets/pdf/Final report ME340 group7.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #2f5d8a; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <a href="{{ '/assets/docs/shuttlecock-me340-report.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #2f5d8a; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     📄 Download ME340 Final Report (PDF)
   </a>
 </div>
