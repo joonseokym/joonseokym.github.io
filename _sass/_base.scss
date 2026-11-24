@@ -1,79 +1,44 @@
 // Base styles
 // ---------------------------------------/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
   background: $white;
+  scroll-behavior: smooth;
 }
 
 body {
-  @include serif;
-  color: $text_color;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: $sans;
+  color: $text;
+  font-size: $body-font-size;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01";
 }
 
-.wrapper:before,
-.wrapper:after {
-  content: "";
-  display: table;
-}
+a {
+  color: $accent;
+  text-decoration: none;
 
-.wrapper:after {
-  clear: both;
+  &:hover { color: $accent-hover; }
 }
 
 .wrapper {
-  max-width: 728px;
+  max-width: $content-width;
   padding: 0 24px;
   margin: 0 auto;
-  zoom: 1;
 }
 
-// clearfix (now called group,
-// via http://css-tricks.com/snippets/css/clear-fix/)
-.group:before,
 .group:after {
   content: "";
   display: table;
-}
-
-.group:after {
   clear: both;
 }
 
-.group {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-}
-
-::-moz-selection {
-  background: rgba(51, 51, 51, .8);
-  color: #fff;
-  text-shadow: none;
-}
-
 ::selection {
-  background: rgba(51, 51, 51, .8);
-  color: #fff;
-  text-shadow: none;
-}
-
-.header-buttons {
-  display: flex;
-  gap: 10px;
-  /* 버튼 사이 간격 */
-  margin-top: 20px;
-}
-
-/* 모바일 대응 */
-@media screen and (max-width: 600px) {
-  .header-buttons {
-    flex-direction: column;
-    gap: 5px;
-  }
+  background: $accent-soft;
+  color: $text;
 }

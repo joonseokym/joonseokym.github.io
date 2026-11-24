@@ -50,7 +50,7 @@ Evaluated the optimized DDQN model against the default model over 1,000 episodes
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="{{ '/_assets/pdf/preURP_JoonseoKym.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <a href="{{ '/_assets/pdf/preURP_JoonseoKym.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #2f5d8a; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     📄 Download Full Research Report (PDF, Korean)
   </a>
 </div>

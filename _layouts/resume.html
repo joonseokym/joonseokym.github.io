@@ -1,258 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
 
 <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
-  <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+  <nav class="site-nav no-print">
+    <div class="wrapper">
+      <a href="{{ '/' | relative_url }}" class="site-nav-name">{{ site.resume_name }}</a>
+      <ul class="site-nav-links">
+        {% if site.resume_section_experience %}<li><a href="#experience">Experience</a></li>{% endif %}
+        {% if site.resume_section_projects %}<li><a href="#projects">Projects</a></li>{% endif %}
+        {% if site.resume_section_patents %}<li><a href="#publications">Publications</a></li>{% endif %}
+        {% if site.resume_section_recognition %}<li><a href="#awards">Awards</a></li>{% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <main itemscope itemtype="http://schema.org/Person">
     <meta itemprop="address" content="{{ site.resume_contact_address }}" />
 
-    <header class="page-header">
-      {% if site.resume_avatar == 'true' %}
-      <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image" />
-      {% endif %}
+    <header class="hero">
+      <div class="wrapper">
+        <div class="hero-text">
+          <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+          <p class="header-title" itemprop="jobTitle">{{ site.resume_title }}</p>
 
-      <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+          <div class="executive-summary" itemprop="description">
+            {{ site.resume_header_intro }}
+          </div>
 
-      {% if site.display_header_contact_info == 'true' %}
-      <div class="header-contact-info">
-        <p>{{ site.resume_header_contact_info }}</p>
-      </div>
-      {% endif %}
+          <div class="hero-actions no-print">
+            {% if site.resume_cv_url %}
+            <a href="{{ site.resume_cv_url | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+            {% endif %}
+            {% if site.resume_looking_for_work == 'yes' %}
+            <a href="javascript:void(0)" onclick="document.getElementById('contact-modal').style.display='block'" class="btn btn-secondary">Contact me</a>
+            {% endif %}
+            {% include icon-links.html %}
+          </div>
+        </div>
 
-      <div class="title-bar no-print">
-        <h2 class="header-title" itemprop="jobTitle">
-          {{ site.resume_title }}
-        </h2>
-        {% include icon-links.html %}
-      </div>
-
-      <div class="executive-summary" itemprop="description">
-        {{ site.resume_header_intro }}
-      </div>
-
-      <div class="header-buttons no-print" style="display: flex; gap: 10px; margin-top: 20px;">
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="javascript:void(0)" onclick="document.getElementById('contact-modal').style.display='block'" class="contact-button">Contact me</a>
-        {% endif %}
-
-        {% if site.resume_cv_url %}
-        <a href="{{ site.resume_cv_url | relative_url }}" class="contact-button" target="_blank">Download CV (PDF)</a>
+        {% if site.resume_avatar == 'true' %}
+        <img src="{{ '/images/avatar-320.jpg' | relative_url }}" alt="Photo of {{ site.resume_name }}" class="avatar" itemprop="image" />
         {% endif %}
       </div>
-
-      {% if site.resume_looking_for_work == 'no' %}
-      <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-      {% endif %}
     </header>
 
     {% if site.resume_section_education %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Education</h2>
-      </header>
-
-      {% for education in site.data.education %}
-      <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-        <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-        <h4 class="resume-item-details group">
-          {{ education.degree }} &bull; {{ education.year }}
-        </h4>
-
-        {% if education.gpa and education.gpa != "" %}
-        <h5 class="resume-item-details award-title">
-          GPA: {{ education.gpa }}
-        </h5>
-        {% endif %}
-
-        {% if education.summary and education.summary != "" %}
-        <p class="resume-item-copy">{{ education.summary }}</p>
-        {% endif %}
-
-        <ul class="resume-item-list">
-          {% for award in education.awards %}
-          <li>{{ award.award }}</li>
-          {% endfor %}
-        </ul>
+    <section class="content-section" id="education">
+      <div class="wrapper">
+        <header class="section-header"><h2>Education</h2></header>
+        {% for education in site.data.education %}
+        <div class="entry" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <div class="entry-date">{{ education.year | replace: ' &mdash; ', ' – <br>' }}</div>
+          <div>
+            <h3 class="entry-title" itemprop="name">{{ education.uni }}</h3>
+            <p class="entry-meta">{{ education.degree }}{% if education.gpa and education.gpa != "" %} · GPA {{ education.gpa }}{% endif %}</p>
+            {% if education.summary and education.summary != "" %}
+            <div class="entry-body"><p>{{ education.summary }}</p></div>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_experience %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Research Experience</h2>
-      </header>
-
-      {% for job in site.data.experience %}
-      <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-        <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-        <h4 class="resume-item-details" itemprop="description">
-          {{ job.position }} &bull; {{ job.duration }}
-        </h4>
-        <p class="resume-item-copy">{{ job.summary }}</p>
+    <section class="content-section" id="experience">
+      <div class="wrapper">
+        <header class="section-header"><h2>Research experience</h2></header>
+        {% for job in site.data.experience %}
+        <div class="entry" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <div class="entry-date">{{ job.duration | replace: ' &mdash; ', ' – <br>' }}</div>
+          <div>
+            <h3 class="entry-title" itemprop="name">{{ job.company }}</h3>
+            <p class="entry-meta">{{ job.position }}</p>
+            <div class="entry-body">{{ job.summary }}</div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_projects %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Research Projects</h2>
-      </header>
-
-      {% for project in site.data.projects %}
-      <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-        <h3 class="resume-item-title" itemprop="name">
-          {{ project.project }}
-          {% if project.url %}
-          <a href="{{ project.url }}" itemprop="url" class="view-details-badge">View Project Details</a>
-          {% endif %}
-        </h3>
-        <h4 class="resume-item-details" itemprop="description">
-          {{ project.role }} &bull; {{ project.duration }}
-        </h4>
-        {% if project.image %}
-        <div class="resume-item-image">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.project }} image">
+    <section class="content-section band" id="projects">
+      <div class="wrapper">
+        <header class="section-header"><h2>Research projects</h2></header>
+        <div class="project-grid">
+          {% for project in site.data.projects %}
+          <a class="project-card" href="{{ project.url | relative_url }}" itemscope itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="creator" content="{{ site.resume_name }}" />
+            {% if project.image %}
+            <img class="project-image" src="{{ project.image | relative_url }}" alt="" loading="lazy" />
+            {% endif %}
+            <div class="project-body">
+              <div class="project-meta">{{ project.duration | replace: '&mdash;', '–' }}<br>{{ project.role | replace: ' • ', ' · ' }}</div>
+              <h3 class="project-title" itemprop="name">{{ project.project }}</h3>
+              {% if project.summary %}<p class="project-summary">{{ project.summary }}</p>{% endif %}
+              <span class="project-link">Read more →</span>
+            </div>
+          </a>
+          {% endfor %}
         </div>
-        {% endif %}
-        <div class="resume-item-copy">{{ project.description }}</div>
-      </div>
-      {% endfor %}
-      
-      <div style="font-size: 0.9em; color: #666; margin-top: 1rem; font-style: italic; text-align: right;">
-        Note: Publications and projects prior to 2021 were authored under the name 'Joonseo Kim'.
+        <p class="section-note">Projects and publications before 2021 were authored under the name Joonseo Kim.</p>
       </div>
     </section>
     {% endif %}
 
     {% if site.resume_section_patents %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Patents & Publications</h2>
-      </header>
-
-      {% for pub in site.data.publications %}
-      <div class="resume-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-        <h3 class="resume-item-title" itemprop="name">
-          {{ pub.title }}
-          {% if pub.url %}
-          <a href="{{ pub.url | relative_url }}" class="view-details-badge">View Project Details</a>
-          {% endif %}
-        </h3>
-        <h4 class="resume-item-details">
-          {{ pub.venue }} &bull; {{ pub.status }}, {{ pub.year }}
-        </h4>
-        <p class="resume-item-copy">{{ pub.authors }}</p>
+    <section class="content-section" id="publications">
+      <div class="wrapper">
+        <header class="section-header"><h2>Publications and patents</h2></header>
+        {% for pub in site.data.publications %}
+        <div class="entry" itemscope itemtype="http://schema.org/ScholarlyArticle">
+          <div class="entry-date">{{ pub.year }}{% if pub.status %}<br><span class="badge">{{ pub.status }}</span>{% endif %}</div>
+          <div>
+            <h3 class="entry-title" itemprop="name">{{ pub.title }}</h3>
+            <p class="entry-meta">{{ pub.authors }} · {{ pub.venue }}</p>
+            {% if pub.url %}<a class="entry-link" href="{{ pub.url | relative_url }}">Project details →</a>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+        {% for patent in site.data.patents %}
+        <div class="entry">
+          <div class="entry-date">{{ patent.year }}</div>
+          <div>
+            <h3 class="entry-title">{{ patent.award }}</h3>
+            <p class="entry-meta">{{ patent.organization }}</p>
+            <div class="entry-body"><p>{{ patent.summary }}</p></div>
+            {% if patent.url %}<a class="entry-link" href="{{ patent.url }}" target="_blank" rel="noopener">View patent →</a>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-
-      {% for patent in site.data.patents %}
-      <div class="resume-item">
-        <h3 class="resume-item-title">
-          {{ patent.award }}
-          {% if patent.url %}
-          <a href="{{ patent.url }}" target="_blank" class="view-details-badge">View Details</a>
-          {% endif %}
-        </h3>
-        <h4 class="resume-item-details">
-          {{ patent.organization }} &bull; {{ patent.year }}
-        </h4>
-        <p class="resume-item-copy">{{ patent.summary }}</p>
-      </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_recognition %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Awards & Honors</h2>
-      </header>
-
-      {% for recognition in site.data.recognitions %}
-      <div class="resume-item">
-        <h3 class="resume-item-title" itemprop="award">
-          {{ recognition.award }}
-        </h3>
-        <h4 class="resume-item-details">
-          {{ recognition.organization }} &bull; {{ recognition.year }}
-        </h4>
-        <p class="resume-item-copy">{{ recognition.summary }}</p>
+    <section class="content-section" id="awards">
+      <div class="wrapper">
+        <header class="section-header"><h2>Awards and honors</h2></header>
+        {% for recognition in site.data.recognitions %}
+        <div class="entry">
+          <div class="entry-date">{{ recognition.year | replace: ' &mdash; ', ' – <br>' }}</div>
+          <div>
+            <h3 class="entry-title" itemprop="award">{{ recognition.award }}</h3>
+            <p class="entry-meta">{{ recognition.organization }}</p>
+            <div class="entry-body">{{ recognition.summary }}</div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_military %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Military Service</h2>
-      </header>
-
-      {% for service in site.data.militaryservice %}
-      <div class="resume-item">
-        <h3 class="resume-item-title">{{ service.company }}</h3>
-        <h4 class="resume-item-details">
-          {{ service.position }} &bull; {{ service.duration }}
-        </h4>
-        <p class="resume-item-copy">{{ service.summary }}</p>
+    <section class="content-section" id="military">
+      <div class="wrapper">
+        <header class="section-header"><h2>Military service</h2></header>
+        {% for service in site.data.militaryservice %}
+        <div class="entry">
+          <div class="entry-date">{{ service.duration | replace: ' &mdash; ', ' – <br>' }}</div>
+          <div>
+            <h3 class="entry-title">{{ service.company }}</h3>
+            <p class="entry-meta">{{ service.position }}</p>
+            <div class="entry-body">{{ service.summary }}</div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_associations %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Associations</h2>
-      </header>
-
-      {% for association in site.data.associations %}
-      <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-        <h3 class="resume-item-title" itemprop="name">
-          {{ association.organization }}
-          {% if association.url %}
-          <a href="{{ association.url }}" class="view-details-badge">Link</a>
-          {% endif %}
-        </h3>
-        <h4 class="resume-item-details" itemprop="description">
-          {{ association.role }} &bull; {{ association.year }}
-        </h4>
-        <p class="resume-item-copy">{{ association.summary }}</p>
+    <section class="content-section" id="associations">
+      <div class="wrapper">
+        <header class="section-header"><h2>Leadership and activities</h2></header>
+        {% for association in site.data.associations %}
+        <div class="entry" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <div class="entry-date">{{ association.year | replace: ' &mdash; ', ' – <br>' }}</div>
+          <div>
+            <h3 class="entry-title" itemprop="name">{{ association.organization }}</h3>
+            <p class="entry-meta">{{ association.role }}</p>
+            <div class="entry-body">{{ association.summary }}</div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_skills %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Technical Skills</h2>
-      </header>
-      {% for skill in site.data.skills %}
-      <div class="resume-item">
-        <h4 class="resume-item-details">{{ skill.skill }}</h4>
-        <p class="resume-item-copy">{{ skill.description }}</p>
+    <section class="content-section" id="skills">
+      <div class="wrapper">
+        <header class="section-header"><h2>Skills</h2></header>
+        {% for skill in site.data.skills %}
+        <div class="entry">
+          <div class="entry-date">{{ skill.skill }}</div>
+          <ul class="chips">
+            {% assign items = skill.description | split: ', ' %}
+            {% for item in items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     {% endif %}
 
     {% if site.resume_section_interests %}
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Outside Interests</h2>
-      </header>
-
-      <div class="resume-item">
-        <ul class="resume-item-list">
-          {% for interest in site.data.interests %}
-          <li>{{ interest.description }}</li>
-          {% endfor %}
+    <section class="content-section" id="interests">
+      <div class="wrapper">
+        <header class="section-header"><h2>Outside interests</h2></header>
+        <ul class="chips">
+          {% for interest in site.data.interests %}<li>{{ interest.description }}</li>{% endfor %}
         </ul>
       </div>
     </section>
@@ -260,86 +221,96 @@
 
     {% if site.resume_print_social_links %}
     <section class="content-section print-only">
-      <header class="section-header">
-        <h2>Social Links</h2>
-      </header>
-      <div class="resume-item">{% include print-social-links.html %}</div>
+      <div class="wrapper">
+        <header class="section-header"><h2>Links</h2></header>
+        {% include print-social-links.html %}
+      </div>
     </section>
     {% endif %}
-    <!-- Contact Modal -->
-    <div id="contact-modal" class="modal no-print">
-      <div class="modal-content">
-        <span class="close-modal" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
-        <h2>Contact Me</h2>
-        <div class="contact-options">
-          <div class="contact-option">
-            <p><strong>Primary:</strong> <span id="email-primary-text"></span></p>
-            <div class="contact-actions">
-              <a href="#" id="email-primary-link" class="action-btn">Send Email</a>
-              <button id="email-primary-copy" class="action-btn">Copy</button>
-            </div>
+  </main>
+
+  <footer class="page-footer no-print">
+    <div class="wrapper">
+      <span>© {{ 'now' | date: '%Y' }} {{ site.resume_name }}</span>
+      <span>
+        <a href="{{ '/blog.html' | relative_url }}">Project posts</a>
+        {% if site.resume_cv_url %} · <a href="{{ site.resume_cv_url | relative_url }}" target="_blank" rel="noopener">CV (PDF)</a>{% endif %}
+      </span>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal no-print">
+    <div class="modal-content">
+      <span class="close-modal" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
+      <h2>Contact me</h2>
+      <div class="contact-options">
+        <div class="contact-option">
+          <p><strong>Primary:</strong> <span id="email-primary-text"></span></p>
+          <div class="contact-actions">
+            <a href="#" id="email-primary-link" class="action-btn">Send email</a>
+            <button id="email-primary-copy" class="action-btn">Copy</button>
           </div>
-          <div class="contact-option">
-            <p><strong>Academic:</strong> <span id="email-academic-text"></span></p>
-            <div class="contact-actions">
-              <a href="#" id="email-academic-link" class="action-btn">Send Email</a>
-              <button id="email-academic-copy" class="action-btn">Copy</button>
-            </div>
+        </div>
+        <div class="contact-option">
+          <p><strong>Academic:</strong> <span id="email-academic-text"></span></p>
+          <div class="contact-actions">
+            <a href="#" id="email-academic-link" class="action-btn">Send email</a>
+            <button id="email-academic-copy" class="action-btn">Copy</button>
           </div>
         </div>
       </div>
     </div>
-
-    <script>
-      // Email obfuscation to prevent spam bots
-      document.addEventListener('DOMContentLoaded', function() {
-        const u1 = "contact";
-        const d1 = "joonseokym.com";
-        const email1 = u1 + "@" + d1;
-
-        const u2 = "joonseo";
-        const d2 = "kaist.ac.kr";
-        const email2 = u2 + "@" + d2;
-
-        document.getElementById('email-primary-text').textContent = email1;
-        document.getElementById('email-primary-link').href = "mailto:" + email1;
-        document.getElementById('email-primary-copy').onclick = function() { copyToClipboard(email1); };
-
-        document.getElementById('email-academic-text').textContent = email2;
-        document.getElementById('email-academic-link').href = "mailto:" + email2;
-        document.getElementById('email-academic-copy').onclick = function() { copyToClipboard(email2); };
-      });
-
-      function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(function() {
-          alert('Copied to clipboard: ' + text);
-        }, function(err) {
-          console.error('Could not copy text: ', err);
-          // Fallback
-          var textArea = document.createElement("textarea");
-          textArea.value = text;
-          document.body.appendChild(textArea);
-          textArea.focus();
-          textArea.select();
-          try {
-            document.execCommand('copy');
-            alert('Copied to clipboard: ' + text);
-          } catch (err) {
-            console.error('Fallback: Oops, unable to copy', err);
-          }
-          document.body.removeChild(textArea);
-        });
-      }
-
-      // Close modal when clicking outside of it
-      window.onclick = function(event) {
-        var modal = document.getElementById('contact-modal');
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
   </div>
+
+  <script>
+    // Email obfuscation to prevent spam bots
+    document.addEventListener('DOMContentLoaded', function() {
+      const u1 = "contact";
+      const d1 = "joonseokym.com";
+      const email1 = u1 + "@" + d1;
+
+      const u2 = "joonseo";
+      const d2 = "kaist.ac.kr";
+      const email2 = u2 + "@" + d2;
+
+      document.getElementById('email-primary-text').textContent = email1;
+      document.getElementById('email-primary-link').href = "mailto:" + email1;
+      document.getElementById('email-primary-copy').onclick = function() { copyToClipboard(email1); };
+
+      document.getElementById('email-academic-text').textContent = email2;
+      document.getElementById('email-academic-link').href = "mailto:" + email2;
+      document.getElementById('email-academic-copy').onclick = function() { copyToClipboard(email2); };
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        alert('Copied to clipboard: ' + text);
+      }, function(err) {
+        console.error('Could not copy text: ', err);
+        var textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          alert('Copied to clipboard: ' + text);
+        } catch (err) {
+          console.error('Fallback: Oops, unable to copy', err);
+        }
+        document.body.removeChild(textArea);
+      });
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      var modal = document.getElementById('contact-modal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
