@@ -84,10 +84,9 @@
   }
 
   .avatar {
-    width: 136px;
-    height: 136px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 168px;
+    height: auto;
+    border-radius: 10px;
     flex-shrink: 0;
   }
 
@@ -100,7 +99,7 @@
       gap: 20px;
     }
 
-    .avatar { width: 88px; height: 88px; }
+    .avatar { width: 120px; }
     .header-name { font-size: 34px; }
   }
 }
