@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Development of a Drone Landing Gear Mimicking Cat Skeletal Structure"
+title: "Development of a Drone Landing Gear Mimicking Feline Skeletal Structure"
 # date: 2019-04-01
 ---
 
@@ -51,10 +51,14 @@ Drop experiments were conducted using a PASCO motion (ultrasonic) sensor to cont
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="/_assets/pdf/DroneLandingGear_Cat.pdf" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <a href="{{ '/_assets/pdf/DroneLandingGear_Cat.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     📄 Download Full Research Paper (PDF, Korean)
   </a>
 </div>
+
+<p style="margin-top: 20px; font-size: 0.9em; color: #666; font-style: italic; text-align: center;">
+  *Note: This research was conducted and originally published under the name Joonseo Kim.*
+</p>
 
 <div id="unified-image-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
   <span style="position: absolute; top: 20px; right: 30px; color: rgba(255,255,255,0.8); font-size: 40px; font-weight: bold;">&times;</span>

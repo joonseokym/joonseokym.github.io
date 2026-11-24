@@ -55,6 +55,10 @@ Evaluated the optimized DDQN model against the default model over 1,000 episodes
   </a>
 </div>
 
+<p style="margin-top: 20px; font-size: 0.9em; color: #666; font-style: italic; text-align: center;">
+  *Note: This research was conducted and originally published under the name Joonseo Kim.*
+</p>
+
 <div id="unified-image-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); align-items: center; justify-content: center; cursor: zoom-out;" onclick="this.style.display='none'">
   <span style="position: absolute; top: 20px; right: 30px; color: rgba(255,255,255,0.8); font-size: 40px; font-weight: bold;">&times;</span>
   <img id="modal-img-src" src="" style="max-width: 90%; max-height: 90vh; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
