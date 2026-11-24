@@ -27,9 +27,11 @@ resume_header_contact_info: "Daejeon, South Korea • joonseo@kaist.ac.kr"
 display_header_contact_info: "false"
 
 resume_header_intro: "<p>
-  I am dedicated to advancing highly dynamic robotics and intelligent control systems. While my recent research involves developing optimal pneumatic mechanomyography (pMMG) sensors and real-time signal processing pipelines, my core objective is to bridge hardware design and learning-based control to build robust robotic systems.
+  I'm an undergraduate in Mechanical and Electrical Engineering at KAIST who builds robotic hardware end to end, from mechanism design and fabrication to sensing, data acquisition, and control.
   <br><br>
-  I possess a solid engineering skillset that includes mechanical design (CAD), real-time data acquisition, and signal processing. Leveraging my dual background in mechanical and electrical engineering, I have a strong foundation in system modeling and control theory. I am highly motivated to deepen my expertise in custom electronics and PCB design to develop fully integrated robotic hardware. With a growing interest in reinforcement learning (RL), I am eager to contribute to cutting-edge research in legged locomotion and autonomous robotics.
+  I started with mechanisms. In high school I designed a cat-inspired shock-absorbing landing gear for drones, then a wearable twisted-string actuator for elbow rehabilitation. The actuator became a registered patent and earned a Fourth Award at Regeneron ISEF. At KAIST's Exoskeleton Lab I moved into sensing: I built pneumatic mechanomyography (pMMG) sensors and their data acquisition systems, and I now lead a first-author study on where to place pMMG sensors to estimate knee extensor torque. Along the way I built mechatronic systems such as an automatic shuttlecock-sorting sweeper, and I explored deep reinforcement learning for control.
+  <br><br>
+  Next, I want to connect these three pieces (mechanism, sensing, and learning-based control) to build dynamic robots, especially legged and wearable systems. To get there, I'm deepening my skills in embedded electronics, PCB design, and reinforcement learning.
 </p>"
 
 # use "yes" to display the email contact button,
