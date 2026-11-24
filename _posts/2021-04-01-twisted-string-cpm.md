@@ -21,7 +21,7 @@ Designed a circular, wearable CPM actuator that transmits power through a twiste
 Load tests showed an output force of over 60N, well above the 32.6N required to move an adult male's forearm at a constant velocity. The mechanism achieved up to a 15-fold increase in output force relative to motor torque.
 
 #### 4. Validation
-A mathematical model was established to predict string displacement and output force from the number of twists, and it was validated experimentally using linear potentiometers. The results confirmed that the mechanism stays linear when string contraction is kept under 33%, showing that it is viable for practical, high-load rehabilitation tasks.
+A mathematical model was established to predict string displacement and output force from the number of twists, and it was validated experimentally using linear potentiometers. Spring-constant tests showed that the mechanism stays linear and predictable while the string contracts by up to about 51% (roughly 25 cm of the 50 cm string), and the 15-fold force gain was measured within this range, showing that it is viable for practical, high-load rehabilitation tasks.
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
   <img src="{{ '/_assets/photos/twisted-string-cpm/ISEF Quad Chart_0421.png' | relative_url }}" alt="ISEF Quad Chart" style="width: 100%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" onclick="openModal('{{ '/_assets/photos/twisted-string-cpm/ISEF Quad Chart_0421.png' | relative_url }}')">
